@@ -80,6 +80,8 @@ public class InternetDocumentRequest {
                     documentList.add(doc);
                 }
             }
+            JsonNode errors = root.path("errors");
+            log.info("errors: " + errors.asText());
         }
         return documentList;
     }
