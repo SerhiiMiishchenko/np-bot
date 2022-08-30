@@ -46,7 +46,6 @@ public class InternetDocumentRequest {
         int statusDocument = requestCreator.getStatusCodeFromResponse(post);
         log.info("status Document: " + statusDocument);
         String responseBody = requestCreator.getBodyFromResponse(post);
-        log.info(responseBody);
         mapper.writerWithDefaultPrettyPrinter();
         JsonNode root = mapper.readTree(responseBody);
         JsonNode success = root.path("success");
