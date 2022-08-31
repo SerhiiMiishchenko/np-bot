@@ -22,22 +22,26 @@ public class InternetDocumentRequest {
     private final HttpRequestCreator requestCreator = new HttpRequestCreator();
     private final ObjectMapper mapper = new ObjectMapper();
 
-    public String getUserInput(String input) {
-        StringBuilder sb = new StringBuilder();
-        var number = input.toCharArray();
+    public static String getUserInput(String input) {
+        StringBuilder digits = new StringBuilder();
+        StringBuilder letters = new StringBuilder();
+        var number = input.trim().toCharArray();
         for (char ch : number) {
             if (Character.isDigit(ch)) {
-                sb.append(ch);
+                digits.append(ch);
+            }
+            if (Character.isLetter(ch)) {
+                letters.append(ch);
             }
         }
-        String result = sb.toString();
+        String result = digits.toString();
         if (result.length() == 10) {
             return "38" + result;
         }
         if (result.length() == 11) {
             return "3" + result;
         }
-        return result;
+        return result.length() == 0 ? letters.toString() : result;
     }
 
     public List<InternetDocument> findDocumentByData(String findByData) throws IOException, InterruptedException {
@@ -86,7 +90,7 @@ public class InternetDocumentRequest {
 
     private Map<String, String> getMethodProperties(String findByData) {
         String page = "0";
-        String limit = "10";
+        String limit = "1";
         Map<String, String> map = new HashMap<>();
         map.put(FIND_BY_DATA.getField(), findByData);
         map.put(PAGE.getField(), page);

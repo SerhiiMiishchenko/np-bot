@@ -42,7 +42,7 @@ public class InternetDocument {
                 %s
                 Статус:
                 %s
-                Тип вантажу:
+                Тип відправлення:
                 %s
                 Кількість місць:
                 %s
