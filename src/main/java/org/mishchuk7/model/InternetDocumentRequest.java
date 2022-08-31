@@ -19,6 +19,7 @@ import static org.mishchuk7.enums.Fields.*;
 
 @Slf4j
 public class InternetDocumentRequest {
+
     private final HttpRequestCreator requestCreator = new HttpRequestCreator();
     private final ObjectMapper mapper = new ObjectMapper();
 

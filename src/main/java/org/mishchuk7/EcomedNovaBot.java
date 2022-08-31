@@ -4,7 +4,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.mishchuk7.model.InternetDocument;
 import org.mishchuk7.model.InternetDocumentRequest;
 import org.springframework.stereotype.Component;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Update;
@@ -19,11 +18,11 @@ import static org.mishchuk7.constants.Constants.BOT_TOKEN;
 @Slf4j
 @Component
 public class EcomedNovaBot extends TelegramLongPollingBot {
+
     private final InternetDocumentRequest request;
 
-    @Autowired
-    public EcomedNovaBot () {
-        this.request = new InternetDocumentRequest();
+    public EcomedNovaBot() {
+        request = new InternetDocumentRequest();
     }
 
     @Override
@@ -51,7 +50,7 @@ public class EcomedNovaBot extends TelegramLongPollingBot {
             log.info("[{}, {}] : {}", userId, userFirstName, textFromUser);
 
             try {
-                findByString = request.getUserInput(textFromUser);
+                findByString = InternetDocumentRequest.getUserInput(textFromUser);
                 internetDocuments = request.findDocumentByData(findByString);
                 result = internetDocuments.stream()
                         .map(InternetDocument::toString)
