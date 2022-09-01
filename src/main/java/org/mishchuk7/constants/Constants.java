@@ -7,4 +7,5 @@ public class Constants {
     public static final String API_KEY = System.getenv("NP_API_KEY");
     public static final String MODEL_NAME = "InternetDocument";
     public static final String CALLED_METHOD = "findDocumentByData";
+    public static final String PATH_TO_USER_INPUT = "src/main/resources/user-input.txt";
 }

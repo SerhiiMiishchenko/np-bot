@@ -91,7 +91,7 @@ public class InternetDocumentRequest {
 
     private Map<String, String> getMethodProperties(String findByData) {
         String page = "0";
-        String limit = "1";
+        String limit = "10";
         Map<String, String> map = new HashMap<>();
         map.put(FIND_BY_DATA.getField(), findByData);
         map.put(PAGE.getField(), page);

@@ -1,0 +1,20 @@
+2022-09-01 22:48:30 INFO  Application:15 - Registering bot...
+2022-09-01 22:48:31 INFO  Application:20 - Telegram bot is ready to accept updates from user......
+2022-09-01 22:48:43 INFO  EcomedNovaBot:57 - [522774791, Serhii] : 380672470964
+2022-09-01 22:48:43 ERROR DefaultBotSession:322 - text is marked non-null but is null
+java.lang.NullPointerException: text is marked non-null but is null
+	at org.telegram.telegrambots.meta.api.methods.send.SendMessage.<init>(SendMessage.java:35)
+	at org.telegram.telegrambots.meta.api.methods.send.SendMessage$SendMessageBuilder.build(SendMessage.java:36)
+	at org.mishchuk7.EcomedNovaBot.onUpdateReceived(EcomedNovaBot.java:64)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2022-09-01 22:53:42 INFO  Application:15 - Registering bot...
+2022-09-01 22:53:42 INFO  Application:20 - Telegram bot is ready to accept updates from user......
+2022-09-01 22:53:49 INFO  EcomedNovaBot:57 - [522774791, Serhii] : 380672470964
+2022-09-01 22:53:49 INFO  InternetDocumentRequest:52 - status Document: 200
+2022-09-01 22:53:50 INFO  InternetDocumentRequest:57 - success: true
+2022-09-01 23:06:24 INFO  Application:15 - Registering bot...
+2022-09-01 23:06:25 INFO  Application:20 - Telegram bot is ready to accept updates from user......
+2022-09-01 23:06:35 INFO  EcomedNovaBot:58 - [522774791, Serhii] : 59000858858556
+2022-09-01 23:06:39 WARN  EcomedNovaBot:88 - Unexpected update from user
