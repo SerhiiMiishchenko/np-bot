@@ -34,47 +34,7 @@ public class InternetDocument {
 
     @Override
     public String toString() {
-        return String.format(
-                """
-                Посилка:
-                %s
-                Дата створення:
-                %s
-                Статус:
-                %s
-                Тип відправлення:
-                %s
-                Кількість місць:
-                %s
-                Вага:
-                %s
-                Від:
-                %s
-                %s
-                %s
-                %s
-                Адреса доставки:
-                %s
-                Отримувач:
-                %s
-                %s
-                %s
-                        """,
-                number,
-                getDate(dateTime),
-                trackingStatusName,
-                CargoType.getDescriptionFromInput(cargoType),
-                seatsAmount,
-                documentWeight,
-                counterpartySenderDescription,
-                senderName,
-                phoneSender,
-                senderAddressDescription,
-                recipientAddressDescription,
-                counterpartyRecipientDescription,
-                recipientName,
-                phoneRecipient
-        );
+        return "Посилка:\n" + number + "\nДата створення:\n" + getDate(dateTime) + "\nСтатус:\n" + trackingStatusName + "\nТип відправлення:\n" + CargoType.getDescriptionFromInput(cargoType) + "\nКількість місць:\n" + seatsAmount + "\nВага:\n" + documentWeight + "\nВід:\n" + counterpartySenderDescription + "\n" + senderName + "\n" + phoneSender + "\n" + senderAddressDescription + "\nАдреса доставки:\n" + recipientAddressDescription + "\nОтримувач:\n" + counterpartyRecipientDescription + "\n" + recipientName + "\n" + phoneRecipient + "\n";
     }
 
     private String getDate(String dateTime) {

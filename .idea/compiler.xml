@@ -13,13 +13,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.24/lombok-1.18.24.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectLombok/lombok/1.18.24/lombok-1.18.24.jar" />
         </processorPath>
         <module name="np-bot" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="np-bot" target="17" />
+    <bytecodeTargetLevel target="11">
+      <module name="np-bot" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
