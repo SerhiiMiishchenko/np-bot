@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d279824-7519-4025-b202-c495a299966f" name="Changes" comment="changed pom.xml">
-      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+    <list default="true" id="3d279824-7519-4025-b202-c495a299966f" name="Changes" comment="changed Procfile">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/log4j.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +51,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Serhii\IdeaProjects\np-bot\" />
       <recent name="C:\Users\Serhii\IdeaProjects\np-bot\src\main\resources" />
       <recent name="C:\Users\Serhii\IdeaProjects\np-bot\src\main\java\org\mishchuk7" />
     </key>
@@ -167,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662048180449</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="changed Procfile">
+      <created>1662048597014</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1662048597014</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -188,11 +197,11 @@
     <MESSAGE value="delete logging from InternetDocumentRequest" />
     <MESSAGE value="added spring actuator to the pom.xml" />
     <MESSAGE value="deleted spring actuator from pom because app failed" />
-    <MESSAGE value="changed Procfile" />
     <MESSAGE value="changed Procfile 2" />
     <MESSAGE value="remove spring boot" />
     <MESSAGE value="changed pom.xml, add log4j.properties" />
     <MESSAGE value="changed pom.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed pom.xml" />
+    <MESSAGE value="changed Procfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed Procfile" />
   </component>
 </project>
