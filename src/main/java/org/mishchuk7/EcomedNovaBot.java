@@ -8,7 +8,6 @@ import org.mishchuk7.model.InternetDocument;
 import org.mishchuk7.model.InternetDocumentRequest;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
-import org.telegram.telegrambots.meta.api.objects.MessageEntity;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
@@ -75,8 +74,7 @@ public class EcomedNovaBot extends TelegramLongPollingBot {
                         .chatId(chatId)
                         .text(result)
                         .build();
-                List<MessageEntity> messageEntities = message.getEntities();
-                messageEntities.get(0).setType("bold");
+                message.getEntities();
                 this.sendApiMethod(message);
             } catch (IOException | InterruptedException | TelegramApiException e) {
                 log.error("Exception when sending message: ", e);
