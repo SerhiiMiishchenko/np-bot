@@ -18,3 +18,84 @@ java.lang.NullPointerException: text is marked non-null but is null
 2022-09-01 23:06:25 INFO  Application:20 - Telegram bot is ready to accept updates from user......
 2022-09-01 23:06:35 INFO  EcomedNovaBot:58 - [522774791, Serhii] : 59000858858556
 2022-09-01 23:06:39 WARN  EcomedNovaBot:88 - Unexpected update from user
+2022-09-02 10:55:05 INFO  Application:15 - Registering bot...
+2022-09-02 11:12:03 INFO  Application:15 - Registering bot...
+2022-09-02 11:12:15 ERROR Application:18 - Failed to register bot(check internet connection / bot token or make sure only one instance of bot is running).
+Error removing old webhook
+	at org.telegram.telegrambots.util.WebhookUtils.clearWebhook(WebhookUtils.java:112)
+	at org.telegram.telegrambots.bots.TelegramLongPollingBot.clearWebhook(TelegramLongPollingBot.java:24)
+	at org.telegram.telegrambots.meta.TelegramBotsApi.registerBot(TelegramBotsApi.java:65)
+	at org.mishchuk7.Application.main(Application.java:16)
+Caused by: Error executing org.telegram.telegrambots.meta.api.methods.updates.DeleteWebhook query: [404] Not Found
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:53)
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponse(PartialBotApiMethod.java:33)
+	at org.telegram.telegrambots.meta.api.methods.botapimethods.BotApiMethodBoolean.deserializeResponse(BotApiMethodBoolean.java:19)
+	at org.telegram.telegrambots.meta.api.methods.botapimethods.BotApiMethodBoolean.deserializeResponse(BotApiMethodBoolean.java:14)
+	at org.telegram.telegrambots.bots.DefaultAbsSender.sendApiMethod(DefaultAbsSender.java:1045)
+	at org.telegram.telegrambots.meta.bots.AbsSender.execute(AbsSender.java:64)
+	at org.telegram.telegrambots.util.WebhookUtils.clearWebhook(WebhookUtils.java:107)
+	... 3 more
+2022-09-02 11:12:15 INFO  Application:20 - Telegram bot is ready to accept updates from user......
+2022-09-02 11:13:47 INFO  Application:15 - Registering bot...
+2022-09-02 11:13:52 ERROR Application:18 - Failed to register bot(check internet connection / bot token or make sure only one instance of bot is running).
+Error removing old webhook
+	at org.telegram.telegrambots.util.WebhookUtils.clearWebhook(WebhookUtils.java:112)
+	at org.telegram.telegrambots.bots.TelegramLongPollingBot.clearWebhook(TelegramLongPollingBot.java:24)
+	at org.telegram.telegrambots.meta.TelegramBotsApi.registerBot(TelegramBotsApi.java:65)
+	at org.mishchuk7.Application.main(Application.java:16)
+Caused by: Error executing org.telegram.telegrambots.meta.api.methods.updates.DeleteWebhook query: [404] Not Found
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:53)
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponse(PartialBotApiMethod.java:33)
+	at org.telegram.telegrambots.meta.api.methods.botapimethods.BotApiMethodBoolean.deserializeResponse(BotApiMethodBoolean.java:19)
+	at org.telegram.telegrambots.meta.api.methods.botapimethods.BotApiMethodBoolean.deserializeResponse(BotApiMethodBoolean.java:14)
+	at org.telegram.telegrambots.bots.DefaultAbsSender.sendApiMethod(DefaultAbsSender.java:1045)
+	at org.telegram.telegrambots.meta.bots.AbsSender.execute(AbsSender.java:64)
+	at org.telegram.telegrambots.util.WebhookUtils.clearWebhook(WebhookUtils.java:107)
+	... 3 more
+2022-09-02 11:13:53 INFO  Application:20 - Telegram bot is ready to accept updates from user......
+2022-09-02 11:16:02 INFO  Application:15 - Registering bot...
+2022-09-02 11:16:12 INFO  Application:20 - Telegram bot is ready to accept updates from user......
+2022-09-02 11:16:51 INFO  EcomedNovaBot:58 - [522774791, Serhii] : 0672470972
+2022-09-02 11:16:59 WARN  EcomedNovaBot:88 - Unexpected update from user
+2022-09-02 11:17:21 WARN  EcomedNovaBot:88 - Unexpected update from user
+2022-09-02 11:32:40 INFO  Application:15 - Registering bot...
+2022-09-02 11:32:49 INFO  Application:20 - Telegram bot is ready to accept updates from user......
+2022-09-02 11:33:05 INFO  EcomedNovaBot:58 - [522774791, Serhii] : 0672470972
+2022-09-02 11:33:10 INFO  InternetDocumentRequest:52 - status Document: 200
+2022-09-02 11:33:10 INFO  InternetDocumentRequest:57 - success: true
+2022-09-02 11:33:53 INFO  EcomedNovaBot:58 - [522774791, Serhii] : 59000858998749
+2022-09-02 11:34:08 INFO  InternetDocumentRequest:52 - status Document: 200
+2022-09-02 11:34:08 INFO  InternetDocumentRequest:57 - success: true
+2022-09-02 11:34:18 INFO  EcomedNovaBot:58 - [522774791, Serhii] : 59000858998749
+2022-09-02 12:06:26 INFO  Application:15 - Registering bot...
+2022-09-02 12:06:34 INFO  Application:20 - Telegram bot is ready to accept updates from user......
+2022-09-02 12:06:59 INFO  EcomedNovaBot:58 - [522774791, Serhii] : 0672470972
+2022-09-02 12:07:04 INFO  InternetDocumentRequest:52 - status Document: 200
+2022-09-02 12:07:04 INFO  InternetDocumentRequest:57 - success: true
+2022-09-02 12:07:22 INFO  InternetDocumentRequest:52 - status Document: 200
+2022-09-02 12:07:22 INFO  InternetDocumentRequest:57 - success: true
+2022-09-02 12:07:44 INFO  EcomedNovaBot:58 - [522774791, Serhii] : Головій
+2022-09-02 12:07:51 INFO  InternetDocumentRequest:52 - status Document: 200
+2022-09-02 12:07:52 INFO  InternetDocumentRequest:57 - success: true
+2022-09-02 12:19:33 INFO  Application:15 - Registering bot...
+2022-09-02 12:19:40 INFO  Application:20 - Telegram bot is ready to accept updates from user......
+2022-09-02 12:20:01 INFO  EcomedNovaBot:58 - [522774791, Serhii] : 0676532323
+2022-09-02 12:20:04 INFO  InternetDocumentRequest:52 - status Document: 200
+2022-09-02 12:20:05 INFO  InternetDocumentRequest:57 - success: true
+2022-09-02 12:20:17 INFO  EcomedNovaBot:58 - [522774791, Serhii] : 0672470972
+2022-09-02 12:27:12 INFO  Application:15 - Registering bot...
+2022-09-02 12:27:18 INFO  Application:20 - Telegram bot is ready to accept updates from user......
+2022-09-02 12:28:57 INFO  EcomedNovaBot:56 - [522774791, Serhii] : 380676532323
+2022-09-02 12:28:59 INFO  InternetDocumentRequest:52 - status Document: 200
+2022-09-02 12:29:00 INFO  InternetDocumentRequest:57 - success: true
+2022-09-02 12:29:09 INFO  EcomedNovaBot:56 - [522774791, Serhii] : 380672470972
+2022-09-02 12:29:13 INFO  InternetDocumentRequest:52 - status Document: 200
+2022-09-02 12:29:13 INFO  InternetDocumentRequest:57 - success: true
+2022-09-02 12:29:29 INFO  EcomedNovaBot:56 - [522774791, Serhii] : 380982050871
+2022-09-02 12:29:31 INFO  InternetDocumentRequest:52 - status Document: 200
+2022-09-02 12:29:31 INFO  InternetDocumentRequest:57 - success: true
+2022-09-02 12:30:22 INFO  EcomedNovaBot:56 - [522774791, Serhii] : Данилишин
+2022-09-02 12:30:24 INFO  InternetDocumentRequest:52 - status Document: 200
+2022-09-02 12:30:25 INFO  InternetDocumentRequest:57 - success: true
+2022-09-02 12:30:48 INFO  InternetDocumentRequest:52 - status Document: 200
+2022-09-02 12:30:48 INFO  InternetDocumentRequest:57 - success: true

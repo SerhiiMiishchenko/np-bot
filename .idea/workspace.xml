@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d279824-7519-4025-b202-c495a299966f" name="Changes" comment="add log4j.properties">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/log.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/log.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/np-bot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/np-bot.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/mishchuk7/EcomedNovaBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mishchuk7/EcomedNovaBot.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/mishchuk7/constants/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mishchuk7/constants/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mishchuk7/model/InternetDocumentRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mishchuk7/model/InternetDocumentRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mishchuk7/keyboards/InlineKeyboardsMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mishchuk7/keyboards/InlineKeyboardsMaker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/user-input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/user-input.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

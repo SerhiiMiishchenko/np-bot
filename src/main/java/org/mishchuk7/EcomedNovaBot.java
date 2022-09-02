@@ -25,11 +25,9 @@ import static org.mishchuk7.constants.Constants.BOT_TOKEN;
 public class EcomedNovaBot extends TelegramLongPollingBot {
 
     private final InternetDocumentRequest request;
-    private final InlineKeyboardsMaker inlineKeyboardsMaker;
 
     public EcomedNovaBot() {
         this.request = new InternetDocumentRequest();
-        this.inlineKeyboardsMaker = new InlineKeyboardsMaker();
     }
 
     @Override
@@ -53,56 +51,52 @@ public class EcomedNovaBot extends TelegramLongPollingBot {
             Long chatId = update.getMessage().getChatId();
             String userFirstName = update.getMessage().getFrom().getFirstName();
             log.info("[{}, {}] : {}", userId, userFirstName, textFromUser);
-            if (!isButtonCallbackData(textFromUser)) {
-                try {
-                    wrightUserInputToFile(textFromUser);
-                    message = SendMessage.builder()
-                            .chatId(chatId)
-                            .text("Оберіть варіант звіту: ")
-                            .replyMarkup(inlineKeyboardsMaker.getInlineKeyboardMarkup(chatId))
-                            .build();
-                    message.getEntities();
-                    this.sendApiMethod(message);
-                } catch (IOException e) {
-                    log.error("Exception during the write file");
-                } catch (TelegramApiException e) {
-                    throw new RuntimeException(e);
-                }
-            } else {
-                try {
-                    result = buttonListener(textFromUser);
-                    message = SendMessage.builder()
-                            .chatId(chatId)
-                            .text(result)
-                            .build();
-                    message.getEntities();
-                    this.sendApiMethod(message);
-                } catch (IOException | InterruptedException | TelegramApiException e) {
-                    log.error("Exception when sending message: ", e);
-                }
+            try {
+                wrightUserInputToFile(textFromUser);
+                message = SendMessage.builder()
+                        .chatId(chatId)
+                        .text("Оберіть варіант звіту: ")
+                        .replyMarkup(new InlineKeyboardsMaker().getInlineKeyboardMarkup())
+                        .build();
+                message.getEntities();
+                this.sendApiMethod(message);
+            } catch (IOException e) {
+                log.error("Exception during the write file");
+            } catch (TelegramApiException e) {
+                throw new RuntimeException(e);
+            }
+        } else if (update.hasCallbackQuery()) {
+            String callback = update.getCallbackQuery().getData();
+            Long chatId = update.getCallbackQuery().getFrom().getId();
+            try {
+                result = buttonListener(callback);
+                message = SendMessage.builder()
+                        .chatId(chatId)
+                        .text(result)
+                        .build();
+                message.getEntities();
+                this.sendApiMethod(message);
+            } catch (IOException | InterruptedException | TelegramApiException e) {
+                log.error("Exception when sending message: ", e);
             }
         } else {
             log.warn("Unexpected update from user");
         }
     }
 
-    private boolean isButtonCallbackData(String textFromUser) {
-        return textFromUser.equalsIgnoreCase(KeyboardButtons.ONE_WAYBILL.getButtonText())
-                || textFromUser.equalsIgnoreCase(KeyboardButtons.ALL_WAYBILLS.getButtonText());
-        //TODO compare by callBackData
-    }
-
-    private String buttonListener(String buttonText) throws IOException, InterruptedException {
+    private String buttonListener(String callBackData) throws IOException, InterruptedException {
         String findByString = readUserInputFile();
         List<InternetDocument> internetDocuments = request.findDocumentByData(findByString);
-        String s = "Відправлень не знайдено.";
-        if (buttonText.equalsIgnoreCase(KeyboardButtons.ONE_WAYBILL.getButtonText())) {
-            return internetDocuments.isEmpty() ? s : internetDocuments.get(0).toString();
+        String notFound = "Відправлень не знайдено.";
+        if (callBackData.equalsIgnoreCase(KeyboardButtons.ONE_WAYBILL.getButtonText())) {
+            return internetDocuments.isEmpty() ? notFound : internetDocuments.get(0).toString();
+        } else if (callBackData.equalsIgnoreCase(KeyboardButtons.ALL_WAYBILLS.getButtonText())) {
+            return internetDocuments.stream()
+                    .map(InternetDocument::toString)
+                    .reduce((doc, doc1) -> doc + "\n" + doc1)
+                    .orElse(notFound);
         }
-        return internetDocuments.stream()
-                .map(InternetDocument::toString)
-                .reduce((doc, doc1) -> doc + "\n" + doc1)
-                .orElse(s);
+        return notFound;
     }
 
     private String readUserInputFile() throws IOException {

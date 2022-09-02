@@ -21,7 +21,7 @@ public class InlineKeyboardsMaker {
         this.buttons = new ArrayList<>();
     }
 
-    public InlineKeyboardMarkup getInlineKeyboardMarkup(Long chatId) {
+    public InlineKeyboardMarkup getInlineKeyboardMarkup() {
         InlineKeyboardButton oneWaybill = createButton("Останнє відправлення", ONE_WAYBILL.getButtonText());
         InlineKeyboardButton allWaybills = createButton("Усі відправлення", ALL_WAYBILLS.getButtonText());
         buttons.add(oneWaybill);
