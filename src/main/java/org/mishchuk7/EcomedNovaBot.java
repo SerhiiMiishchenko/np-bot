@@ -56,7 +56,7 @@ public class EcomedNovaBot extends TelegramLongPollingBot {
                 message = SendMessage.builder()
                         .chatId(chatId)
                         .text("Оберіть варіант звіту: ")
-                        .replyMarkup(new InlineKeyboardsMaker().getInlineKeyboardMarkup())
+                        .replyMarkup(InlineKeyboardsMaker.getInlineKeyboardMarkup(textFromUser))
                         .build();
                 message.getEntities();
                 this.sendApiMethod(message);

@@ -11,19 +11,12 @@ import static org.mishchuk7.enums.KeyboardButtons.ALL_WAYBILLS;
 
 public class InlineKeyboardsMaker {
 
-    private final InlineKeyboardMarkup inlineKeyboardMarkup;
-    private final List<List<InlineKeyboardButton>> keyboard;
-    private final List<InlineKeyboardButton> buttons;
-
-    public InlineKeyboardsMaker() {
-        this.inlineKeyboardMarkup = new InlineKeyboardMarkup();
-        this.keyboard = new ArrayList<>();
-        this.buttons = new ArrayList<>();
-    }
-
-    public InlineKeyboardMarkup getInlineKeyboardMarkup() {
-        InlineKeyboardButton oneWaybill = createButton("Останнє відправлення", ONE_WAYBILL.getButtonText());
-        InlineKeyboardButton allWaybills = createButton("Усі відправлення", ALL_WAYBILLS.getButtonText());
+    public static InlineKeyboardMarkup getInlineKeyboardMarkup(String textFromUser) {
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> keyboard = new ArrayList<>();
+        List<InlineKeyboardButton> buttons = new ArrayList<>();
+        InlineKeyboardButton oneWaybill = createButton(ONE_WAYBILL.getButtonText(), textFromUser + ":" + ONE_WAYBILL.getButtonText());
+        InlineKeyboardButton allWaybills = createButton(ALL_WAYBILLS.getButtonText(), textFromUser+ ":" + ALL_WAYBILLS.getButtonText());
         buttons.add(oneWaybill);
         buttons.add(allWaybills);
         keyboard.add(buttons);
@@ -31,7 +24,7 @@ public class InlineKeyboardsMaker {
         return inlineKeyboardMarkup;
     }
 
-    private InlineKeyboardButton createButton(String buttonName, String buttonCallbackData) {
+    private static InlineKeyboardButton createButton(String buttonName, String buttonCallbackData) {
         InlineKeyboardButton button = new InlineKeyboardButton(buttonName);
         button.setCallbackData(buttonCallbackData);
         return button;
