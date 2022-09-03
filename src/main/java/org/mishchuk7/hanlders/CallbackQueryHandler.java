@@ -1,5 +1,6 @@
 package org.mishchuk7.hanlders;
 
+import org.mishchuk7.constants.Constants;
 import org.mishchuk7.enums.KeyboardButtons;
 import org.mishchuk7.model.InternetDocument;
 import org.mishchuk7.model.InternetDocumentRequest;
@@ -9,7 +10,7 @@ import org.mishchuk7.service.TelegramService;
 import java.io.IOException;
 import java.util.List;
 
-public class CallbackQueryHandler extends UserRequestHandler{
+public class CallbackQueryHandler extends UserRequestHandler {
     private final TelegramService telegramService;
 
     public CallbackQueryHandler(TelegramService telegramService) {
@@ -29,7 +30,8 @@ public class CallbackQueryHandler extends UserRequestHandler{
         String result = "";
         try {
             String buttonText = callbackData[1];
-            internetDocuments = new InternetDocumentRequest().findDocumentByData(callbackData[0]);
+            String data = InternetDocumentRequest.getUserInput(callbackData[0]);
+            internetDocuments = new InternetDocumentRequest().findDocumentByData(data);
             if (buttonText.equalsIgnoreCase(KeyboardButtons.ONE_WAYBILL.getButtonText())) {
                 result = internetDocuments.isEmpty() ? notFound : internetDocuments.get(0).toString();
             } else if (buttonText.equalsIgnoreCase(KeyboardButtons.ALL_WAYBILLS.getButtonText())) {
@@ -38,7 +40,7 @@ public class CallbackQueryHandler extends UserRequestHandler{
                         .reduce((doc, doc1) -> doc + "\n" + doc1)
                         .orElse(notFound);
             }
-            telegramService.sendMessage(userRequest.getChatId(), result);
+            telegramService.sendMessage(userRequest.getChatId(), cutTooLongResult(result));
         } catch (IOException | InterruptedException e) {
             throw new RuntimeException(e);
         }
@@ -48,4 +50,18 @@ public class CallbackQueryHandler extends UserRequestHandler{
     public boolean isGlobal() {
         return false;
     }
+
+    private String cutTooLongResult(String result) {
+        int length = Constants.MESSAGE_MAX_LENGTH;
+        char[] resultChars = result.toCharArray();
+        StringBuilder message = new StringBuilder();
+        if (result.length() > length) {
+            for (int i = 0; i < length; i++) {
+                message.append(resultChars[i]);
+            }
+            return message.toString();
+        }
+        return result;
+    }
+
 }
