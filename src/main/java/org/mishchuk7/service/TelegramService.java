@@ -1,7 +1,7 @@
 package org.mishchuk7.service;
 
 import lombok.extern.slf4j.Slf4j;
-import org.mishchuk7.EcomedNovaBot;
+import org.mishchuk7.sender.EcomedNovaBotSender;
 import org.telegram.telegrambots.meta.api.methods.BotApiMethod;
 import org.telegram.telegrambots.meta.api.methods.ParseMode;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
@@ -10,10 +10,10 @@ import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
 @Slf4j
 public class TelegramService {
-    private final EcomedNovaBot ecomedNovaBot;
+    private final EcomedNovaBotSender ecomedNovaBotSender;
 
-    public TelegramService(EcomedNovaBot ecomedNovaBot) {
-        this.ecomedNovaBot = ecomedNovaBot;
+    public TelegramService(EcomedNovaBotSender ecomedNovaBotSender) {
+        this.ecomedNovaBotSender = ecomedNovaBotSender;
     }
 
     public void sendMessage(Long chatId, String text) {
@@ -32,7 +32,7 @@ public class TelegramService {
 
     private void execute(BotApiMethod botApiMethod) {
         try {
-            ecomedNovaBot.execute(botApiMethod);
+            ecomedNovaBotSender.execute(botApiMethod);
         } catch (TelegramApiException e) {
             log.error("Exception: ", e);
         }
