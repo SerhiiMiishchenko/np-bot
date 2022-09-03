@@ -34,7 +34,22 @@ public class InternetDocument {
 
     @Override
     public String toString() {
-        return "Посилка:\n" + number + "\nДата створення:\n" + getDate(dateTime) + "\nСтатус:\n" + trackingStatusName + "\nТип відправлення:\n" + CargoType.getDescriptionFromInput(cargoType) + "\nКількість місць:\n" + seatsAmount + "\nВага:\n" + documentWeight + "\nВід:\n" + counterpartySenderDescription + "\n" + senderName + "\n" + phoneSender + "\n" + senderAddressDescription + "\nАдреса доставки:\n" + recipientAddressDescription + "\nОтримувач:\n" + counterpartyRecipientDescription + "\n" + recipientName + "\n" + phoneRecipient + "\n";
+        return "<b>Посилка:</b>\n" + number +
+                "\n<b>Дата створення:</b>\n" + getDate(dateTime) +
+                "\n<b>Статус:</b>\n" + trackingStatusName +
+                "\n<b>Тип відправлення:</b>\n" + CargoType.getDescriptionFromInput(cargoType) +
+                "\n<b>Кількість місць:</b>\n" + seatsAmount +
+                "\n<b>Вага:</b>\n" + documentWeight +
+                "\n<b>Від:</b>\n" + counterpartySenderDescription +
+                "\n" + senderName +
+                "\n" + phoneSender +
+                "\n" + senderAddressDescription +
+                "\n<b>Адреса доставки:</b>\n" + recipientAddressDescription +
+                "\n<b>Отримувач:</b>\n" + counterpartyRecipientDescription +
+                "\n" + recipientName +
+                "\n" + phoneRecipient + "\n" +
+                "-".repeat(25) +
+                "\n";
     }
 
     private String getDate(String dateTime) {
