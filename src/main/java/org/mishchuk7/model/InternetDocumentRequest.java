@@ -49,7 +49,7 @@ public class InternetDocumentRequest {
         List<InternetDocument> documentList = new ArrayList<>();
         String post = requestCreator.getPostFromRequestBuilder(createInternetDocumentPostRequest(getMethodProperties(findByData)));
         int statusDocument = requestCreator.getStatusCodeFromResponse(post);
-        log.info("status Document: " + statusDocument);
+        log.info("status document: " + statusDocument);
         String responseBody = requestCreator.getBodyFromResponse(post);
         mapper.writerWithDefaultPrettyPrinter();
         JsonNode root = mapper.readTree(responseBody);
@@ -103,7 +103,7 @@ public class InternetDocumentRequest {
 
     private HttpRequestBuilder createInternetDocumentPostRequest(Map<String, String> methodProperties) {
         return HttpRequestBuilder.builder()
-                .apiKey(Constants.API_KEY)
+                .apiKey(Constants.NP_API_KEY)
                 .modelName(Constants.MODEL_NAME)
                 .calledMethod(Constants.CALLED_METHOD)
                 .methodProperties(methodProperties)
