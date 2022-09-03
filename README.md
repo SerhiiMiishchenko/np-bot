@@ -14,11 +14,11 @@
 
 ### Bot functionality:
 - With the help of the bot you can get information about the parcel sent by Nova Poshta
-  by indicating the phone number, name of the recipient or the parcel number.
+  by indicating the phone number, surname of the recipient or the parcel number.
   
 ### Run:
 1. Create bot via BotFather (`t.me/BotFather`)
 2. You can specify your `bot-token`, `bot-name` and `np-api-key` in the system environment variables or "hardcode" them in the org/mishchuk7/constants/Constants,
 or create `application.yml` and specify them there.
 3. Run `Application.main()`
-4. Now navigate to your bot and try to send some sender or recipient phone number, name of the recipient or the parcel number.
+4. Now navigate to your bot and try to send some sender or recipient phone number, surname of the recipient or the parcel number.
