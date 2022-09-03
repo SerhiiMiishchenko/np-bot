@@ -13,10 +13,6 @@ public abstract class UserRequestHandler {
                 && update.getMessage().getText().equals(command);
     }
 
-    public boolean isTextMessage(Update update) {
-        return update.hasMessage() && update.getMessage().hasText();
-    }
-
     public boolean isTextMessage(Update update, String text) {
         return update.hasMessage() && update.getMessage().hasText() && update.getMessage().getText().equals(text);
     }
