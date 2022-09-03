@@ -5,7 +5,7 @@ import org.mishchuk7.service.TelegramService;
 
 public class StartCommandHandler extends UserRequestHandler{
 
-    private static String command = "/start";
+    private static final String command = "/start";
 
     private final TelegramService telegramService;
 
@@ -22,7 +22,7 @@ public class StartCommandHandler extends UserRequestHandler{
     public void handle(UserRequest dispatchRequest) {
         telegramService.sendMessage(dispatchRequest.getChatId(),
                 "Для пошуку відправлення введіть номер телефону отримувача/відправника.\n" +
-                        "Також можна шукати за прізвищем отримувача/відправника або номером відправлення." );
+                        "Також пошук здійснюється за прізвищем отримувача/відправника або номером відправлення." );
     }
 
     @Override
