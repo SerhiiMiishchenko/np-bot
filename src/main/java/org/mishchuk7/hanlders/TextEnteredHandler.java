@@ -19,7 +19,7 @@ public class TextEnteredHandler extends UserRequestHandler{
     @Override
     public void handle(UserRequest userRequest) {
         telegramService.sendMessage(userRequest.getChatId(),
-                "Оберіть варіант звіту: ",
+                "Оберіть варіант звіту ⤵",
                 InlineKeyboardsMaker.getInlineKeyboardMarkup(userRequest.getUpdate().getMessage().getText()));
     }
 
