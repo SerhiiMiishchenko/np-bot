@@ -21,8 +21,8 @@ public class StartCommandHandler extends UserRequestHandler{
     @Override
     public void handle(UserRequest dispatchRequest) {
         telegramService.sendMessage(dispatchRequest.getChatId(),
-                "Для пошуку відправлення введіть номер телефону отримувача/відправника.\n" +
-                        "Також пошук здійснюється за прізвищем отримувача/відправника або номером відправлення." );
+                "Для пошуку відправлення введіть номер телефону отримувача або відправника.\n" +
+                        "Також пошук здійснюється за прізвищем отримувача або відправника, або за номером відправлення." );
     }
 
     @Override

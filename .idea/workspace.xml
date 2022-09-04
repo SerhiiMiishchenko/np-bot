@@ -4,31 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d279824-7519-4025-b202-c495a299966f" name="Changes" comment="added tests for HttpRequestCreator">
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_09_2022_20_03_[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_09_2022_20_03_[Changes]1/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_09_2022_20_03__Changes_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/mishchuk7/Dispatcher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/mishchuk7/hanlders/CallbackQueryHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/mishchuk7/hanlders/StartCommandHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/mishchuk7/hanlders/TextEnteredHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/mishchuk7/hanlders/UserRequestHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/mishchuk7/model/UserRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/mishchuk7/sender/EcomedNovaBotSender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/mishchuk7/service/TelegramService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/mishchuk7/http/HttpRequestCreatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/log.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/log.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mishchuk7/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mishchuk7/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mishchuk7/EcomedNovaBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mishchuk7/EcomedNovaBot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mishchuk7/constants/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mishchuk7/constants/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mishchuk7/enums/KeyboardButtons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mishchuk7/enums/KeyboardButtons.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mishchuk7/http/HttpRequestCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mishchuk7/http/HttpRequestCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mishchuk7/keyboards/InlineKeyboardsMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mishchuk7/keyboards/InlineKeyboardsMaker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mishchuk7/model/InternetDocument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mishchuk7/model/InternetDocument.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mishchuk7/model/InternetDocumentRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mishchuk7/model/InternetDocumentRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/user-input.txt" beforeDir="false" />
-    </list>
+    <list default="true" id="3d279824-7519-4025-b202-c495a299966f" name="Changes" comment="merge with handler-branch" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -97,7 +73,7 @@
       <recent name="org.mishchuk7.http" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.HttpRequestCreatorTest">
+  <component name="RunManager" selected="Application.Application">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="$USER_HOME$/.jdks/corretto-11.0.15" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -130,8 +106,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.HttpRequestCreatorTest" />
         <item itemvalue="Application.Application" />
+        <item itemvalue="JUnit.HttpRequestCreatorTest" />
       </list>
     </recent_temporary>
   </component>
@@ -403,7 +379,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662233809242</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="merge with handler-branch">
+      <created>1662298682030</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1662298682030</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -418,7 +401,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="delete logging from InternetDocumentRequest" />
     <MESSAGE value="added spring actuator to the pom.xml" />
     <MESSAGE value="deleted spring actuator from pom because app failed" />
     <MESSAGE value="changed Procfile 2" />
@@ -443,6 +425,7 @@
     <MESSAGE value="added method List&lt;UserRequestHandler&gt; getHandlers() and field Dispatcher dispatcher" />
     <MESSAGE value="added method Long getUpdateId(Update update)" />
     <MESSAGE value="added tests for HttpRequestCreator" />
-    <option name="LAST_COMMIT_MESSAGE" value="added tests for HttpRequestCreator" />
+    <MESSAGE value="merge with handler-branch" />
+    <option name="LAST_COMMIT_MESSAGE" value="merge with handler-branch" />
   </component>
 </project>
