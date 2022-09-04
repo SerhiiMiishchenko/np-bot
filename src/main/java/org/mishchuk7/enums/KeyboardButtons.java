@@ -1,8 +1,8 @@
 package org.mishchuk7.enums;
 
 public enum KeyboardButtons {
-    ONE_WAYBILL("last waybill"),
-    ALL_WAYBILLS("all waybills");
+    ONE_WAYBILL("Останнє відправлення"),
+    ALL_WAYBILLS("Усі відправлення");
 
     final String buttonText;
 

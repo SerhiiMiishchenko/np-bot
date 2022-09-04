@@ -1,0 +1,518 @@
+2022-09-01 22:48:30 INFO  Application:15 - Registering bot...
+2022-09-01 22:48:31 INFO  Application:20 - Telegram bot is ready to accept updates from user......
+2022-09-01 22:48:43 INFO  EcomedNovaBot:57 - [522774791, Serhii] : 380672470964
+2022-09-01 22:48:43 ERROR DefaultBotSession:322 - text is marked non-null but is null
+java.lang.NullPointerException: text is marked non-null but is null
+	at org.telegram.telegrambots.meta.api.methods.send.SendMessage.<init>(SendMessage.java:35)
+	at org.telegram.telegrambots.meta.api.methods.send.SendMessage$SendMessageBuilder.build(SendMessage.java:36)
+	at org.mishchuk7.EcomedNovaBot.onUpdateReceived(EcomedNovaBot.java:64)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2022-09-01 22:53:42 INFO  Application:15 - Registering bot...
+2022-09-01 22:53:42 INFO  Application:20 - Telegram bot is ready to accept updates from user......
+2022-09-01 22:53:49 INFO  EcomedNovaBot:57 - [522774791, Serhii] : 380672470964
+2022-09-01 22:53:49 INFO  InternetDocumentRequest:52 - status Document: 200
+2022-09-01 22:53:50 INFO  InternetDocumentRequest:57 - success: true
+2022-09-01 23:06:24 INFO  Application:15 - Registering bot...
+2022-09-01 23:06:25 INFO  Application:20 - Telegram bot is ready to accept updates from user......
+2022-09-01 23:06:35 INFO  EcomedNovaBot:58 - [522774791, Serhii] : 59000858858556
+2022-09-01 23:06:39 WARN  EcomedNovaBot:88 - Unexpected update from user
+2022-09-02 10:55:05 INFO  Application:15 - Registering bot...
+2022-09-02 11:12:03 INFO  Application:15 - Registering bot...
+2022-09-02 11:12:15 ERROR Application:18 - Failed to register bot(check internet connection / bot token or make sure only one instance of bot is running).
+Error removing old webhook
+	at org.telegram.telegrambots.util.WebhookUtils.clearWebhook(WebhookUtils.java:112)
+	at org.telegram.telegrambots.bots.TelegramLongPollingBot.clearWebhook(TelegramLongPollingBot.java:24)
+	at org.telegram.telegrambots.meta.TelegramBotsApi.registerBot(TelegramBotsApi.java:65)
+	at org.mishchuk7.Application.main(Application.java:16)
+Caused by: Error executing org.telegram.telegrambots.meta.api.methods.updates.DeleteWebhook query: [404] Not Found
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:53)
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponse(PartialBotApiMethod.java:33)
+	at org.telegram.telegrambots.meta.api.methods.botapimethods.BotApiMethodBoolean.deserializeResponse(BotApiMethodBoolean.java:19)
+	at org.telegram.telegrambots.meta.api.methods.botapimethods.BotApiMethodBoolean.deserializeResponse(BotApiMethodBoolean.java:14)
+	at org.telegram.telegrambots.bots.DefaultAbsSender.sendApiMethod(DefaultAbsSender.java:1045)
+	at org.telegram.telegrambots.meta.bots.AbsSender.execute(AbsSender.java:64)
+	at org.telegram.telegrambots.util.WebhookUtils.clearWebhook(WebhookUtils.java:107)
+	... 3 more
+2022-09-02 11:12:15 INFO  Application:20 - Telegram bot is ready to accept updates from user......
+2022-09-02 11:13:47 INFO  Application:15 - Registering bot...
+2022-09-02 11:13:52 ERROR Application:18 - Failed to register bot(check internet connection / bot token or make sure only one instance of bot is running).
+Error removing old webhook
+	at org.telegram.telegrambots.util.WebhookUtils.clearWebhook(WebhookUtils.java:112)
+	at org.telegram.telegrambots.bots.TelegramLongPollingBot.clearWebhook(TelegramLongPollingBot.java:24)
+	at org.telegram.telegrambots.meta.TelegramBotsApi.registerBot(TelegramBotsApi.java:65)
+	at org.mishchuk7.Application.main(Application.java:16)
+Caused by: Error executing org.telegram.telegrambots.meta.api.methods.updates.DeleteWebhook query: [404] Not Found
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:53)
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponse(PartialBotApiMethod.java:33)
+	at org.telegram.telegrambots.meta.api.methods.botapimethods.BotApiMethodBoolean.deserializeResponse(BotApiMethodBoolean.java:19)
+	at org.telegram.telegrambots.meta.api.methods.botapimethods.BotApiMethodBoolean.deserializeResponse(BotApiMethodBoolean.java:14)
+	at org.telegram.telegrambots.bots.DefaultAbsSender.sendApiMethod(DefaultAbsSender.java:1045)
+	at org.telegram.telegrambots.meta.bots.AbsSender.execute(AbsSender.java:64)
+	at org.telegram.telegrambots.util.WebhookUtils.clearWebhook(WebhookUtils.java:107)
+	... 3 more
+2022-09-02 11:13:53 INFO  Application:20 - Telegram bot is ready to accept updates from user......
+2022-09-02 11:16:02 INFO  Application:15 - Registering bot...
+2022-09-02 11:16:12 INFO  Application:20 - Telegram bot is ready to accept updates from user......
+2022-09-02 11:16:51 INFO  EcomedNovaBot:58 - [522774791, Serhii] : 0672470972
+2022-09-02 11:16:59 WARN  EcomedNovaBot:88 - Unexpected update from user
+2022-09-02 11:17:21 WARN  EcomedNovaBot:88 - Unexpected update from user
+2022-09-02 11:32:40 INFO  Application:15 - Registering bot...
+2022-09-02 11:32:49 INFO  Application:20 - Telegram bot is ready to accept updates from user......
+2022-09-02 11:33:05 INFO  EcomedNovaBot:58 - [522774791, Serhii] : 0672470972
+2022-09-02 11:33:10 INFO  InternetDocumentRequest:52 - status Document: 200
+2022-09-02 11:33:10 INFO  InternetDocumentRequest:57 - success: true
+2022-09-02 11:33:53 INFO  EcomedNovaBot:58 - [522774791, Serhii] : 59000858998749
+2022-09-02 11:34:08 INFO  InternetDocumentRequest:52 - status Document: 200
+2022-09-02 11:34:08 INFO  InternetDocumentRequest:57 - success: true
+2022-09-02 11:34:18 INFO  EcomedNovaBot:58 - [522774791, Serhii] : 59000858998749
+2022-09-02 12:06:26 INFO  Application:15 - Registering bot...
+2022-09-02 12:06:34 INFO  Application:20 - Telegram bot is ready to accept updates from user......
+2022-09-02 12:06:59 INFO  EcomedNovaBot:58 - [522774791, Serhii] : 0672470972
+2022-09-02 12:07:04 INFO  InternetDocumentRequest:52 - status Document: 200
+2022-09-02 12:07:04 INFO  InternetDocumentRequest:57 - success: true
+2022-09-02 12:07:22 INFO  InternetDocumentRequest:52 - status Document: 200
+2022-09-02 12:07:22 INFO  InternetDocumentRequest:57 - success: true
+2022-09-02 12:07:44 INFO  EcomedNovaBot:58 - [522774791, Serhii] : Головій
+2022-09-02 12:07:51 INFO  InternetDocumentRequest:52 - status Document: 200
+2022-09-02 12:07:52 INFO  InternetDocumentRequest:57 - success: true
+2022-09-02 12:19:33 INFO  Application:15 - Registering bot...
+2022-09-02 12:19:40 INFO  Application:20 - Telegram bot is ready to accept updates from user......
+2022-09-02 12:20:01 INFO  EcomedNovaBot:58 - [522774791, Serhii] : 0676532323
+2022-09-02 12:20:04 INFO  InternetDocumentRequest:52 - status Document: 200
+2022-09-02 12:20:05 INFO  InternetDocumentRequest:57 - success: true
+2022-09-02 12:20:17 INFO  EcomedNovaBot:58 - [522774791, Serhii] : 0672470972
+2022-09-02 12:27:12 INFO  Application:15 - Registering bot...
+2022-09-02 12:27:18 INFO  Application:20 - Telegram bot is ready to accept updates from user......
+2022-09-02 12:28:57 INFO  EcomedNovaBot:56 - [522774791, Serhii] : 380676532323
+2022-09-02 12:28:59 INFO  InternetDocumentRequest:52 - status Document: 200
+2022-09-02 12:29:00 INFO  InternetDocumentRequest:57 - success: true
+2022-09-02 12:29:09 INFO  EcomedNovaBot:56 - [522774791, Serhii] : 380672470972
+2022-09-02 12:29:13 INFO  InternetDocumentRequest:52 - status Document: 200
+2022-09-02 12:29:13 INFO  InternetDocumentRequest:57 - success: true
+2022-09-02 12:29:29 INFO  EcomedNovaBot:56 - [522774791, Serhii] : 380982050871
+2022-09-02 12:29:31 INFO  InternetDocumentRequest:52 - status Document: 200
+2022-09-02 12:29:31 INFO  InternetDocumentRequest:57 - success: true
+2022-09-02 12:30:22 INFO  EcomedNovaBot:56 - [522774791, Serhii] : Данилишин
+2022-09-02 12:30:24 INFO  InternetDocumentRequest:52 - status Document: 200
+2022-09-02 12:30:25 INFO  InternetDocumentRequest:57 - success: true
+2022-09-02 12:30:48 INFO  InternetDocumentRequest:52 - status Document: 200
+2022-09-02 12:30:48 INFO  InternetDocumentRequest:57 - success: true
+2022-09-03 16:01:51 INFO  Application:26 - Registering bot...
+2022-09-03 16:01:51 INFO  Application:31 - Telegram bot is ready to accept updates from user......
+2022-09-03 16:02:08 INFO  EcomedNovaBot:62 - [522774791, Serhii] : 380505836941
+2022-09-03 16:02:11 INFO  InternetDocumentRequest:52 - status Document: 200
+2022-09-03 16:02:12 INFO  InternetDocumentRequest:57 - success: true
+2022-09-03 16:02:12 ERROR DefaultBotSession:322 - chatId is marked non-null but is null
+java.lang.NullPointerException: chatId is marked non-null but is null
+	at org.telegram.telegrambots.meta.api.methods.send.SendMessage$SendMessageBuilder.chatId(SendMessage.java:144)
+	at org.mishchuk7.service.TelegramService.sendMessage(TelegramService.java:25)
+	at org.mishchuk7.service.TelegramService.sendMessage(TelegramService.java:20)
+	at org.mishchuk7.hanlders.CallbackQueryHandler.handle(CallbackQueryHandler.java:41)
+	at org.mishchuk7.Dispatcher.dispatch(Dispatcher.java:23)
+	at org.mishchuk7.EcomedNovaBot.onUpdateReceived(EcomedNovaBot.java:69)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2022-09-03 16:07:24 INFO  Application:26 - Registering bot...
+2022-09-03 16:07:25 INFO  Application:31 - Telegram bot is ready to accept updates from user......
+2022-09-03 16:07:34 INFO  EcomedNovaBot:62 - [522774791, Serhii] : 380672470972
+2022-09-03 16:09:55 INFO  Application:26 - Registering bot...
+2022-09-03 16:09:55 INFO  Application:31 - Telegram bot is ready to accept updates from user......
+2022-09-03 16:10:09 INFO  EcomedNovaBot:61 - chatId: 522774791
+2022-09-03 16:10:09 INFO  EcomedNovaBot:63 - [522774791, Serhii] : 380505836941
+2022-09-03 16:10:17 ERROR DefaultBotSession:322 - 
+java.lang.NullPointerException
+	at org.mishchuk7.EcomedNovaBot.onUpdateReceived(EcomedNovaBot.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2022-09-03 16:11:15 INFO  Application:26 - Registering bot...
+2022-09-03 16:11:15 INFO  Application:31 - Telegram bot is ready to accept updates from user......
+2022-09-03 16:11:21 INFO  EcomedNovaBot:61 - chatId: 522774791
+2022-09-03 16:11:21 INFO  EcomedNovaBot:63 - [522774791, Serhii] : 380505836941
+2022-09-03 16:11:25 INFO  InternetDocumentRequest:52 - status Document: 200
+2022-09-03 16:11:25 INFO  InternetDocumentRequest:57 - success: true
+2022-09-03 16:11:25 ERROR DefaultBotSession:322 - chatId is marked non-null but is null
+java.lang.NullPointerException: chatId is marked non-null but is null
+	at org.telegram.telegrambots.meta.api.methods.send.SendMessage$SendMessageBuilder.chatId(SendMessage.java:144)
+	at org.mishchuk7.service.TelegramService.sendMessage(TelegramService.java:25)
+	at org.mishchuk7.service.TelegramService.sendMessage(TelegramService.java:20)
+	at org.mishchuk7.hanlders.CallbackQueryHandler.handle(CallbackQueryHandler.java:41)
+	at org.mishchuk7.Dispatcher.dispatch(Dispatcher.java:23)
+	at org.mishchuk7.EcomedNovaBot.onUpdateReceived(EcomedNovaBot.java:70)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2022-09-03 16:41:03 INFO  Application:26 - Registering bot...
+2022-09-03 16:41:03 INFO  Application:31 - Telegram bot is ready to accept updates from user......
+2022-09-03 16:41:15 INFO  EcomedNovaBot:62 - [522774791, Serhii] : 380505836941
+2022-09-03 16:41:15 INFO  TelegramService:24 - chatId522774791
+2022-09-03 16:41:25 INFO  InternetDocumentRequest:52 - status Document: 200
+2022-09-03 16:41:25 INFO  InternetDocumentRequest:57 - success: true
+2022-09-03 16:41:25 INFO  TelegramService:24 - chatIdnull
+2022-09-03 16:41:25 ERROR DefaultBotSession:322 - chatId is marked non-null but is null
+java.lang.NullPointerException: chatId is marked non-null but is null
+	at org.telegram.telegrambots.meta.api.methods.send.SendMessage$SendMessageBuilder.chatId(SendMessage.java:144)
+	at org.mishchuk7.service.TelegramService.sendMessage(TelegramService.java:26)
+	at org.mishchuk7.service.TelegramService.sendMessage(TelegramService.java:20)
+	at org.mishchuk7.hanlders.CallbackQueryHandler.handle(CallbackQueryHandler.java:41)
+	at org.mishchuk7.Dispatcher.dispatch(Dispatcher.java:23)
+	at org.mishchuk7.EcomedNovaBot.onUpdateReceived(EcomedNovaBot.java:69)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2022-09-03 17:05:58 INFO  Application:26 - Registering bot...
+2022-09-03 17:05:58 INFO  Application:31 - Telegram bot is ready to accept updates from user......
+2022-09-03 17:06:09 INFO  EcomedNovaBot:59 - [522774791, Serhii] : 380505836941
+2022-09-03 17:06:09 INFO  TelegramService:24 - chatId522774791
+2022-09-03 17:06:12 INFO  InternetDocumentRequest:52 - status Document: 200
+2022-09-03 17:06:12 INFO  InternetDocumentRequest:57 - success: true
+2022-09-03 17:06:12 INFO  TelegramService:24 - chatId522774791
+2022-09-03 17:06:19 INFO  InternetDocumentRequest:52 - status Document: 200
+2022-09-03 17:06:20 INFO  InternetDocumentRequest:57 - success: true
+2022-09-03 17:06:20 INFO  TelegramService:24 - chatId522774791
+2022-09-03 17:14:38 INFO  Application:26 - Registering bot...
+2022-09-03 17:14:38 INFO  Application:31 - Telegram bot is ready to accept updates from user......
+2022-09-03 17:14:48 INFO  EcomedNovaBot:41 - [522774791, Serhii] : 380672470972
+2022-09-03 17:14:48 INFO  TelegramService:24 - chatId522774791
+2022-09-03 17:14:50 INFO  InternetDocumentRequest:52 - status Document: 200
+2022-09-03 17:14:50 INFO  InternetDocumentRequest:57 - success: true
+2022-09-03 17:14:50 INFO  TelegramService:24 - chatId522774791
+2022-09-03 17:15:46 INFO  Application:26 - Registering bot...
+2022-09-03 17:15:47 INFO  Application:31 - Telegram bot is ready to accept updates from user......
+2022-09-03 17:16:00 INFO  EcomedNovaBot:41 - [522774791, Serhii] : 380672470972
+2022-09-03 17:16:00 INFO  TelegramService:24 - chatId522774791
+2022-09-03 17:16:02 INFO  InternetDocumentRequest:52 - status Document: 200
+2022-09-03 17:16:02 INFO  InternetDocumentRequest:57 - success: true
+2022-09-03 17:16:02 INFO  TelegramService:24 - chatId522774791
+2022-09-03 17:16:22 INFO  InternetDocumentRequest:52 - status Document: 200
+2022-09-03 17:16:22 INFO  InternetDocumentRequest:57 - success: true
+2022-09-03 17:16:22 INFO  TelegramService:24 - chatId522774791
+2022-09-03 17:16:22 ERROR TelegramService:38 - Exception: 
+Error executing org.telegram.telegrambots.meta.api.methods.send.SendMessage query: [400] Bad Request: message is too long
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:53)
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponse(PartialBotApiMethod.java:33)
+	at org.telegram.telegrambots.meta.api.methods.botapimethods.BotApiMethodMessage.deserializeResponse(BotApiMethodMessage.java:20)
+	at org.telegram.telegrambots.meta.api.methods.botapimethods.BotApiMethodMessage.deserializeResponse(BotApiMethodMessage.java:15)
+	at org.telegram.telegrambots.bots.DefaultAbsSender.sendApiMethod(DefaultAbsSender.java:1045)
+	at org.telegram.telegrambots.meta.bots.AbsSender.execute(AbsSender.java:64)
+	at org.mishchuk7.service.TelegramService.execute(TelegramService.java:36)
+	at org.mishchuk7.service.TelegramService.sendMessage(TelegramService.java:31)
+	at org.mishchuk7.service.TelegramService.sendMessage(TelegramService.java:20)
+	at org.mishchuk7.hanlders.CallbackQueryHandler.handle(CallbackQueryHandler.java:41)
+	at org.mishchuk7.Dispatcher.dispatch(Dispatcher.java:23)
+	at org.mishchuk7.EcomedNovaBot.onUpdateReceived(EcomedNovaBot.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2022-09-03 17:36:08 INFO  Application:26 - Registering bot...
+2022-09-03 17:36:09 INFO  Application:31 - Telegram bot is ready to accept updates from user......
+2022-09-03 17:36:15 INFO  InternetDocumentRequest:52 - status Document: 200
+2022-09-03 17:36:15 INFO  InternetDocumentRequest:57 - success: true
+2022-09-03 17:36:16 INFO  TelegramService:24 - chatId522774791
+2022-09-03 17:36:16 ERROR TelegramService:38 - Exception: 
+Error executing org.telegram.telegrambots.meta.api.methods.send.SendMessage query: [400] Bad Request: can't parse entities: Unclosed start tag at byte offset 6116
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:53)
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponse(PartialBotApiMethod.java:33)
+	at org.telegram.telegrambots.meta.api.methods.botapimethods.BotApiMethodMessage.deserializeResponse(BotApiMethodMessage.java:20)
+	at org.telegram.telegrambots.meta.api.methods.botapimethods.BotApiMethodMessage.deserializeResponse(BotApiMethodMessage.java:15)
+	at org.telegram.telegrambots.bots.DefaultAbsSender.sendApiMethod(DefaultAbsSender.java:1045)
+	at org.telegram.telegrambots.meta.bots.AbsSender.execute(AbsSender.java:64)
+	at org.mishchuk7.service.TelegramService.execute(TelegramService.java:36)
+	at org.mishchuk7.service.TelegramService.sendMessage(TelegramService.java:31)
+	at org.mishchuk7.service.TelegramService.sendMessage(TelegramService.java:20)
+	at org.mishchuk7.hanlders.CallbackQueryHandler.handle(CallbackQueryHandler.java:44)
+	at org.mishchuk7.Dispatcher.dispatch(Dispatcher.java:23)
+	at org.mishchuk7.EcomedNovaBot.onUpdateReceived(EcomedNovaBot.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2022-09-03 17:36:16 INFO  TelegramService:24 - chatId522774791
+2022-09-03 17:36:16 ERROR TelegramService:38 - Exception: 
+org.telegram.telegrambots.meta.exceptions.TelegramApiValidationException: Text parameter can't be empty in method: SendMessage(chatId=522774791, text=, parseMode=html, disableWebPagePreview=null, disableNotification=null, replyToMessageId=null, replyMarkup=null, entities=null, allowSendingWithoutReply=null, protectContent=null)
+	at org.telegram.telegrambots.meta.api.methods.send.SendMessage.validate(SendMessage.java:131)
+	at org.telegram.telegrambots.bots.DefaultAbsSender.sendMethodRequest(DefaultAbsSender.java:1070)
+	at org.telegram.telegrambots.bots.DefaultAbsSender.sendApiMethod(DefaultAbsSender.java:1044)
+	at org.telegram.telegrambots.meta.bots.AbsSender.execute(AbsSender.java:64)
+	at org.mishchuk7.service.TelegramService.execute(TelegramService.java:36)
+	at org.mishchuk7.service.TelegramService.sendMessage(TelegramService.java:31)
+	at org.mishchuk7.service.TelegramService.sendMessage(TelegramService.java:20)
+	at org.mishchuk7.hanlders.CallbackQueryHandler.handle(CallbackQueryHandler.java:45)
+	at org.mishchuk7.Dispatcher.dispatch(Dispatcher.java:23)
+	at org.mishchuk7.EcomedNovaBot.onUpdateReceived(EcomedNovaBot.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2022-09-03 17:38:12 INFO  Application:26 - Registering bot...
+2022-09-03 17:38:13 INFO  Application:31 - Telegram bot is ready to accept updates from user......
+2022-09-03 17:38:21 INFO  InternetDocumentRequest:52 - status Document: 200
+2022-09-03 17:38:21 INFO  InternetDocumentRequest:57 - success: true
+2022-09-03 17:38:21 INFO  TelegramService:24 - chatId522774791
+2022-09-03 17:38:22 INFO  TelegramService:24 - chatId522774791
+2022-09-03 17:38:22 ERROR TelegramService:38 - Exception: 
+org.telegram.telegrambots.meta.exceptions.TelegramApiValidationException: Text parameter can't be empty in method: SendMessage(chatId=522774791, text=, parseMode=html, disableWebPagePreview=null, disableNotification=null, replyToMessageId=null, replyMarkup=null, entities=null, allowSendingWithoutReply=null, protectContent=null)
+	at org.telegram.telegrambots.meta.api.methods.send.SendMessage.validate(SendMessage.java:131)
+	at org.telegram.telegrambots.bots.DefaultAbsSender.sendMethodRequest(DefaultAbsSender.java:1070)
+	at org.telegram.telegrambots.bots.DefaultAbsSender.sendApiMethod(DefaultAbsSender.java:1044)
+	at org.telegram.telegrambots.meta.bots.AbsSender.execute(AbsSender.java:64)
+	at org.mishchuk7.service.TelegramService.execute(TelegramService.java:36)
+	at org.mishchuk7.service.TelegramService.sendMessage(TelegramService.java:31)
+	at org.mishchuk7.service.TelegramService.sendMessage(TelegramService.java:20)
+	at org.mishchuk7.hanlders.CallbackQueryHandler.handle(CallbackQueryHandler.java:45)
+	at org.mishchuk7.Dispatcher.dispatch(Dispatcher.java:23)
+	at org.mishchuk7.EcomedNovaBot.onUpdateReceived(EcomedNovaBot.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2022-09-03 17:45:26 INFO  Application:26 - Registering bot...
+2022-09-03 17:45:29 INFO  Application:31 - Telegram bot is ready to accept updates from user......
+2022-09-03 17:46:04 INFO  EcomedNovaBot:41 - [522774791, Serhii] : 380672470972
+2022-09-03 17:46:04 INFO  TelegramService:24 - chatId522774791
+2022-09-03 17:46:11 INFO  InternetDocumentRequest:52 - status Document: 200
+2022-09-03 17:46:11 INFO  InternetDocumentRequest:57 - success: true
+2022-09-03 17:46:11 INFO  TelegramService:24 - chatId522774791
+2022-09-03 17:48:35 INFO  Application:26 - Registering bot...
+2022-09-03 17:48:36 INFO  Application:31 - Telegram bot is ready to accept updates from user......
+2022-09-03 18:19:46 INFO  EcomedNovaBot:41 - [522774791, Serhii] : 20450583233321
+2022-09-03 18:19:47 INFO  InternetDocumentRequest:52 - status Document: 200
+2022-09-03 18:19:48 INFO  InternetDocumentRequest:57 - success: true
+2022-09-03 18:19:48 ERROR DefaultBotSession:322 - Index 596 out of bounds for length 596
+java.lang.ArrayIndexOutOfBoundsException: Index 596 out of bounds for length 596
+	at org.mishchuk7.hanlders.CallbackQueryHandler.cutTooLongResult(CallbackQueryHandler.java:58)
+	at org.mishchuk7.hanlders.CallbackQueryHandler.handle(CallbackQueryHandler.java:42)
+	at org.mishchuk7.Dispatcher.dispatch(Dispatcher.java:23)
+	at org.mishchuk7.EcomedNovaBot.onUpdateReceived(EcomedNovaBot.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2022-09-03 18:36:00 INFO  Application:26 - Registering bot...
+2022-09-03 18:36:00 INFO  Application:31 - Telegram bot is ready to accept updates from user......
+2022-09-03 18:37:07 INFO  EcomedNovaBot:41 - [522774791, Serhii] : Хмара
+2022-09-03 18:37:10 INFO  InternetDocumentRequest:52 - status Document: 200
+2022-09-03 18:37:10 INFO  InternetDocumentRequest:57 - success: true
+2022-09-03 18:37:10 ERROR DefaultBotSession:322 - Index 601 out of bounds for length 601
+java.lang.ArrayIndexOutOfBoundsException: Index 601 out of bounds for length 601
+	at org.mishchuk7.hanlders.CallbackQueryHandler.cutTooLongResult(CallbackQueryHandler.java:58)
+	at org.mishchuk7.hanlders.CallbackQueryHandler.handle(CallbackQueryHandler.java:42)
+	at org.mishchuk7.Dispatcher.dispatch(Dispatcher.java:23)
+	at org.mishchuk7.EcomedNovaBot.onUpdateReceived(EcomedNovaBot.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2022-09-03 18:37:48 INFO  EcomedNovaBot:41 - [522774791, Serhii] : 067 247 0972
+2022-09-03 18:37:51 INFO  InternetDocumentRequest:52 - status Document: 200
+2022-09-03 18:37:51 INFO  InternetDocumentRequest:57 - success: true
+2022-09-03 18:37:51 ERROR DefaultBotSession:322 - Index 670 out of bounds for length 670
+java.lang.ArrayIndexOutOfBoundsException: Index 670 out of bounds for length 670
+	at org.mishchuk7.hanlders.CallbackQueryHandler.cutTooLongResult(CallbackQueryHandler.java:58)
+	at org.mishchuk7.hanlders.CallbackQueryHandler.handle(CallbackQueryHandler.java:42)
+	at org.mishchuk7.Dispatcher.dispatch(Dispatcher.java:23)
+	at org.mishchuk7.EcomedNovaBot.onUpdateReceived(EcomedNovaBot.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2022-09-03 18:37:55 INFO  InternetDocumentRequest:52 - status Document: 200
+2022-09-03 18:37:55 INFO  InternetDocumentRequest:57 - success: true
+2022-09-03 18:37:55 ERROR DefaultBotSession:322 - Index 670 out of bounds for length 670
+java.lang.ArrayIndexOutOfBoundsException: Index 670 out of bounds for length 670
+	at org.mishchuk7.hanlders.CallbackQueryHandler.cutTooLongResult(CallbackQueryHandler.java:58)
+	at org.mishchuk7.hanlders.CallbackQueryHandler.handle(CallbackQueryHandler.java:42)
+	at org.mishchuk7.Dispatcher.dispatch(Dispatcher.java:23)
+	at org.mishchuk7.EcomedNovaBot.onUpdateReceived(EcomedNovaBot.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2022-09-03 18:37:56 INFO  InternetDocumentRequest:52 - status Document: 200
+2022-09-03 18:37:56 INFO  InternetDocumentRequest:57 - success: true
+2022-09-03 18:37:56 ERROR DefaultBotSession:322 - Index 670 out of bounds for length 670
+java.lang.ArrayIndexOutOfBoundsException: Index 670 out of bounds for length 670
+	at org.mishchuk7.hanlders.CallbackQueryHandler.cutTooLongResult(CallbackQueryHandler.java:58)
+	at org.mishchuk7.hanlders.CallbackQueryHandler.handle(CallbackQueryHandler.java:42)
+	at org.mishchuk7.Dispatcher.dispatch(Dispatcher.java:23)
+	at org.mishchuk7.EcomedNovaBot.onUpdateReceived(EcomedNovaBot.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2022-09-03 18:38:40 INFO  EcomedNovaBot:41 - [522774791, Serhii] : 380673421704
+2022-09-03 18:38:42 INFO  InternetDocumentRequest:52 - status Document: 200
+2022-09-03 18:38:42 INFO  InternetDocumentRequest:57 - success: true
+2022-09-03 18:38:42 ERROR DefaultBotSession:322 - Index 641 out of bounds for length 641
+java.lang.ArrayIndexOutOfBoundsException: Index 641 out of bounds for length 641
+	at org.mishchuk7.hanlders.CallbackQueryHandler.cutTooLongResult(CallbackQueryHandler.java:58)
+	at org.mishchuk7.hanlders.CallbackQueryHandler.handle(CallbackQueryHandler.java:42)
+	at org.mishchuk7.Dispatcher.dispatch(Dispatcher.java:23)
+	at org.mishchuk7.EcomedNovaBot.onUpdateReceived(EcomedNovaBot.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2022-09-03 18:39:20 INFO  InternetDocumentRequest:52 - status Document: 200
+2022-09-03 18:39:20 INFO  InternetDocumentRequest:57 - success: true
+2022-09-03 18:39:20 ERROR TelegramService:37 - Exception: 
+Error executing org.telegram.telegrambots.meta.api.methods.send.SendMessage query: [400] Bad Request: can't parse entities: Unclosed start tag at byte offset 5680
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:53)
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponse(PartialBotApiMethod.java:33)
+	at org.telegram.telegrambots.meta.api.methods.botapimethods.BotApiMethodMessage.deserializeResponse(BotApiMethodMessage.java:20)
+	at org.telegram.telegrambots.meta.api.methods.botapimethods.BotApiMethodMessage.deserializeResponse(BotApiMethodMessage.java:15)
+	at org.telegram.telegrambots.bots.DefaultAbsSender.sendApiMethod(DefaultAbsSender.java:1045)
+	at org.telegram.telegrambots.meta.bots.AbsSender.execute(AbsSender.java:64)
+	at org.mishchuk7.service.TelegramService.execute(TelegramService.java:35)
+	at org.mishchuk7.service.TelegramService.sendMessage(TelegramService.java:30)
+	at org.mishchuk7.service.TelegramService.sendMessage(TelegramService.java:20)
+	at org.mishchuk7.hanlders.CallbackQueryHandler.handle(CallbackQueryHandler.java:42)
+	at org.mishchuk7.Dispatcher.dispatch(Dispatcher.java:23)
+	at org.mishchuk7.EcomedNovaBot.onUpdateReceived(EcomedNovaBot.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2022-09-03 18:39:22 INFO  InternetDocumentRequest:52 - status Document: 200
+2022-09-03 18:39:22 INFO  InternetDocumentRequest:57 - success: true
+2022-09-03 18:39:22 ERROR TelegramService:37 - Exception: 
+Error executing org.telegram.telegrambots.meta.api.methods.send.SendMessage query: [400] Bad Request: can't parse entities: Unclosed start tag at byte offset 5680
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:53)
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponse(PartialBotApiMethod.java:33)
+	at org.telegram.telegrambots.meta.api.methods.botapimethods.BotApiMethodMessage.deserializeResponse(BotApiMethodMessage.java:20)
+	at org.telegram.telegrambots.meta.api.methods.botapimethods.BotApiMethodMessage.deserializeResponse(BotApiMethodMessage.java:15)
+	at org.telegram.telegrambots.bots.DefaultAbsSender.sendApiMethod(DefaultAbsSender.java:1045)
+	at org.telegram.telegrambots.meta.bots.AbsSender.execute(AbsSender.java:64)
+	at org.mishchuk7.service.TelegramService.execute(TelegramService.java:35)
+	at org.mishchuk7.service.TelegramService.sendMessage(TelegramService.java:30)
+	at org.mishchuk7.service.TelegramService.sendMessage(TelegramService.java:20)
+	at org.mishchuk7.hanlders.CallbackQueryHandler.handle(CallbackQueryHandler.java:42)
+	at org.mishchuk7.Dispatcher.dispatch(Dispatcher.java:23)
+	at org.mishchuk7.EcomedNovaBot.onUpdateReceived(EcomedNovaBot.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2022-09-03 18:39:23 INFO  InternetDocumentRequest:52 - status Document: 200
+2022-09-03 18:39:23 INFO  InternetDocumentRequest:57 - success: true
+2022-09-03 18:39:23 ERROR TelegramService:37 - Exception: 
+Error executing org.telegram.telegrambots.meta.api.methods.send.SendMessage query: [400] Bad Request: can't parse entities: Unclosed start tag at byte offset 5680
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:53)
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponse(PartialBotApiMethod.java:33)
+	at org.telegram.telegrambots.meta.api.methods.botapimethods.BotApiMethodMessage.deserializeResponse(BotApiMethodMessage.java:20)
+	at org.telegram.telegrambots.meta.api.methods.botapimethods.BotApiMethodMessage.deserializeResponse(BotApiMethodMessage.java:15)
+	at org.telegram.telegrambots.bots.DefaultAbsSender.sendApiMethod(DefaultAbsSender.java:1045)
+	at org.telegram.telegrambots.meta.bots.AbsSender.execute(AbsSender.java:64)
+	at org.mishchuk7.service.TelegramService.execute(TelegramService.java:35)
+	at org.mishchuk7.service.TelegramService.sendMessage(TelegramService.java:30)
+	at org.mishchuk7.service.TelegramService.sendMessage(TelegramService.java:20)
+	at org.mishchuk7.hanlders.CallbackQueryHandler.handle(CallbackQueryHandler.java:42)
+	at org.mishchuk7.Dispatcher.dispatch(Dispatcher.java:23)
+	at org.mishchuk7.EcomedNovaBot.onUpdateReceived(EcomedNovaBot.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2022-09-03 18:39:44 INFO  EcomedNovaBot:41 - [522774791, Serhii] : /start
+2022-09-03 18:39:57 INFO  EcomedNovaBot:41 - [522774791, Serhii] : 0672470972
+2022-09-03 18:40:00 INFO  InternetDocumentRequest:52 - status Document: 200
+2022-09-03 18:40:00 INFO  InternetDocumentRequest:57 - success: true
+2022-09-03 18:40:00 ERROR DefaultBotSession:322 - Index 672 out of bounds for length 672
+java.lang.ArrayIndexOutOfBoundsException: Index 672 out of bounds for length 672
+	at org.mishchuk7.hanlders.CallbackQueryHandler.cutTooLongResult(CallbackQueryHandler.java:58)
+	at org.mishchuk7.hanlders.CallbackQueryHandler.handle(CallbackQueryHandler.java:42)
+	at org.mishchuk7.Dispatcher.dispatch(Dispatcher.java:23)
+	at org.mishchuk7.EcomedNovaBot.onUpdateReceived(EcomedNovaBot.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2022-09-03 19:19:31 INFO  DefaultBotSession:270 - Read timed out
+java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1454)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1065)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:250)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:189)
+2022-09-03 19:22:50 INFO  Application:26 - Registering bot...
+2022-09-03 19:22:51 INFO  Application:31 - Telegram bot is ready to accept updates from user......
+2022-09-03 19:23:00 INFO  InternetDocumentRequest:52 - status Document: 200
+2022-09-03 19:23:00 INFO  InternetDocumentRequest:57 - success: true
+2022-09-03 19:23:51 INFO  EcomedNovaBot:41 - [522774791, Serhii] : 20450583236038
+2022-09-03 19:23:53 INFO  InternetDocumentRequest:52 - status Document: 200
+2022-09-03 19:23:53 INFO  InternetDocumentRequest:57 - success: true
+2022-09-03 19:24:39 INFO  InternetDocumentRequest:52 - status Document: 200
+2022-09-03 19:24:39 INFO  InternetDocumentRequest:57 - success: true
+2022-09-03 19:25:55 INFO  EcomedNovaBot:41 - [522774791, Serhii] : /start
+2022-09-03 19:26:22 INFO  EcomedNovaBot:41 - [522774791, Serhii] : +380672470972
+2022-09-03 19:26:24 INFO  InternetDocumentRequest:52 - status Document: 200
+2022-09-03 19:26:24 INFO  InternetDocumentRequest:57 - success: false
+2022-09-03 19:26:46 INFO  EcomedNovaBot:41 - [522774791, Serhii] : 380672470972
+2022-09-03 19:26:48 INFO  InternetDocumentRequest:52 - status Document: 200
+2022-09-03 19:26:49 INFO  InternetDocumentRequest:57 - success: true
+2022-09-03 19:31:14 INFO  Application:26 - Registering bot...
+2022-09-03 19:31:15 INFO  Application:31 - Telegram bot is ready to accept updates from user......
+2022-09-03 19:31:30 INFO  EcomedNovaBot:41 - [522774791, Serhii] : +380672470972
+2022-09-03 19:31:32 INFO  InternetDocumentRequest:52 - status Document: 200
+2022-09-03 19:31:33 INFO  InternetDocumentRequest:57 - success: true
+2022-09-03 19:31:50 INFO  EcomedNovaBot:41 - [522774791, Serhii] : вента
+2022-09-03 19:31:52 INFO  InternetDocumentRequest:52 - status Document: 200
+2022-09-03 19:31:53 INFO  InternetDocumentRequest:57 - success: true
+2022-09-03 19:32:04 INFO  InternetDocumentRequest:52 - status Document: 200
+2022-09-03 19:32:04 INFO  InternetDocumentRequest:57 - success: true
+2022-09-03 19:35:42 INFO  EcomedNovaBot:41 - [522774791, Serhii] : санітас
+2022-09-03 19:35:44 INFO  InternetDocumentRequest:52 - status Document: 200
+2022-09-03 19:35:44 INFO  InternetDocumentRequest:57 - success: true
+2022-09-03 19:36:00 INFO  InternetDocumentRequest:52 - status Document: 200
+2022-09-03 19:36:00 INFO  InternetDocumentRequest:57 - success: true
+2022-09-03 19:36:24 INFO  EcomedNovaBot:41 - [522774791, Serhii] : Хмара
+2022-09-03 19:36:26 INFO  InternetDocumentRequest:52 - status Document: 200
+2022-09-03 19:36:26 INFO  InternetDocumentRequest:57 - success: true
+2022-09-03 19:36:39 INFO  InternetDocumentRequest:52 - status Document: 200
+2022-09-03 19:36:39 INFO  InternetDocumentRequest:57 - success: true
+2022-09-03 19:36:39 ERROR TelegramService:37 - Exception: 
+Error executing org.telegram.telegrambots.meta.api.methods.send.SendMessage query: [400] Bad Request: can't parse entities: Unclosed end tag at byte offset 5582
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:53)
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponse(PartialBotApiMethod.java:33)
+	at org.telegram.telegrambots.meta.api.methods.botapimethods.BotApiMethodMessage.deserializeResponse(BotApiMethodMessage.java:20)
+	at org.telegram.telegrambots.meta.api.methods.botapimethods.BotApiMethodMessage.deserializeResponse(BotApiMethodMessage.java:15)
+	at org.telegram.telegrambots.bots.DefaultAbsSender.sendApiMethod(DefaultAbsSender.java:1045)
+	at org.telegram.telegrambots.meta.bots.AbsSender.execute(AbsSender.java:64)
+	at org.mishchuk7.service.TelegramService.execute(TelegramService.java:35)
+	at org.mishchuk7.service.TelegramService.sendMessage(TelegramService.java:30)
+	at org.mishchuk7.service.TelegramService.sendMessage(TelegramService.java:20)
+	at org.mishchuk7.hanlders.CallbackQueryHandler.handle(CallbackQueryHandler.java:43)
+	at org.mishchuk7.Dispatcher.dispatch(Dispatcher.java:23)
+	at org.mishchuk7.EcomedNovaBot.onUpdateReceived(EcomedNovaBot.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2022-09-03 19:37:27 INFO  Application:26 - Registering bot...
+2022-09-03 19:37:28 INFO  Application:31 - Telegram bot is ready to accept updates from user......
+2022-09-03 19:37:32 INFO  InternetDocumentRequest:52 - status Document: 200
+2022-09-03 19:37:33 INFO  InternetDocumentRequest:57 - success: true
+2022-09-03 19:50:50 INFO  Application:26 - Registering bot...
+2022-09-03 19:50:51 INFO  Application:31 - Telegram bot is ready to accept updates from user......
+2022-09-03 19:51:09 INFO  EcomedNovaBot:41 - [522774791, Serhii] : 380674065088
+2022-09-03 19:51:22 INFO  InternetDocumentRequest:52 - status document: 200
+2022-09-03 19:51:22 INFO  InternetDocumentRequest:57 - success: true
+2022-09-03 20:09:55 INFO  Application:26 - Registering bot...
+2022-09-03 20:09:55 INFO  Application:31 - Telegram bot is ready to accept updates from user......
+2022-09-03 20:10:04 INFO  EcomedNovaBot:41 - [522774791, Serhii] : 380674065088
+2022-09-03 20:10:07 INFO  InternetDocumentRequest:52 - status document: 200
+2022-09-03 20:10:07 INFO  HttpRequestCreator:33 - getBodyFromResponse: {"success":true,"data":[{"result":[{"MoneyTransferPayerType":null,"MoneyTransferNumber":"","ClientBarcodes":[],"DateTime":"2022-08-26 17:58:06","CounterpartyRecipientDescription":"\u0422\u041e\u0412 \"\u041a\u041e\u041c\u041f\u0410\u041d\u0406\u042f \u0421\u041b\u0410\u0412\u041d\u0410\"","MoneyTransferCreationDate":"0001-01-01 00:00:00","DocumentWeight":1.76,"AfterpaymentOnGoodsCost":"0.00","ArrivalDateTime":"2022-08-27 09:13:18","CityRecipient":"db5c88c4-391c-11dd-90d9-001a92567626","LoyaltyCardRecipient":null,"LoyaltyCardSender":"a0cce922-ffb1-11e8-a8ec-0025b502b06e","DeletionMark":false,"RecipientFullName":"\u0425\u043c\u0430\u0440\u0430 \u0420\u043e\u043c\u0430\u043d","VolumetricWeight":"1.76","FactualWeight":"0.50","CitySender":"8d5a980d-391c-11dd-90d9-001a92567626","MarketplacePartnerToken":"cea38574-9f54-11e6-b5da-005056887b8d","CounterpartySenderDescription":"\u0422\u041e\u0412 \"\u0415\u041a\u041e\u041c\u0415\u0414\"","InternationalDeliveryType":"","MoneyTransferCommission":0,"CargoDescription":"\u0422\u043e\u0432\u0430\u0440\u0438 \u043c\u0435\u0434\u0438\u0447\u043d\u043e\u0433\u043e \u043f\u0440\u0438\u0437\u043d\u0430\u0447\u0435\u043d\u043d\u044f","SumBeforeCheckWeight":70,"EndDeliveryTime":"0001-01-01 00:00:00","CheckWeight":0,"Note":"","PaymentMethod":"NonCash","CitySenderDescription":"\u041a\u0438\u0457\u0432","CargoType":"Parcel","SenderArchive":false,"AttorneyDescription":null,"PayerType":"Sender","SenderName":"\u041a\u043e\u0432\u0435\u0440\u0433\u0430 \u041e\u043b\u0435\u043d\u0430 \u0412\u0456\u043a\u0442\u043e\u0440\u0456\u0432\u043d\u0430","LinkedEWs":[],"SeatsAmount":"1","TrackingStatusCode":"9","PhoneRecipient":"380674065088","RecipientAddressDescription":"\u043c. \u0416\u0438\u0442\u043e\u043c\u0438\u0440, \u0412\u0456\u0434\u0434\u0456\u043b\u0435\u043d\u043d\u044f \u21161: \u0432\u0443\u043b. \u0413\u0440\u0430\u043d\u0456\u0442\u043d\u0430, 16","AdjustedDate":"0001-01-01 00:00:00","CityRecipientDescription":"\u0416\u0438\u0442\u043e\u043c\u0438\u0440","ScheduledDeliveryDate":"2022-08-27 12:00:00","Cost":2000,"MoneyTransferCash2Card":"0","MoneyTransferAmount":null,"Number":"20450580167859","RecipientArchive":false,"MoneyTransferPayerCommission":"","PhoneSender":"380672470972","RecipientName":"\u041f\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043d\u0438\u043a \u041f\u0440\u0435\u0434 \u041f\u0440\u0435\u0434\u0441","DocumentCost":70,"ScanSheetInternetNumber":"105-35568854","TrackingUpdateDate":"2022-08-30 09:32:25","BeginDeliveryTime":"0001-01-01 00:00:00","CounterpartyRecipient":"d3804bc0-c335-11e7-96d0-d4ae527baed4","CargoAutoReturnDate":"0001-01-01 00:00:00","FirstDayStorage":"2022-09-04 09:13:18","CardMaskedNumber":"","CounterpartySender":"9a55444f-3a21-11dd-90d9-001a92567626","ReceivingDateTime":"2022-08-30 09:32:09","OrderedBackwardDeliveryDocuments":[],"MoneyTransferTransactionDate":"0001-01-01 00:00:00","SettlementSender":"e718a680-4b33-11e4-ab6d-005056801329","TransferStatusGlobalMoneyStatus":"","SenderAddressDescription":"\u043c. \u041a\u0438\u0457\u0432, \u0432\u0443\u043b. \u0421\u0438\u0440\u0435\u0446\u044c\u043a\u0430, 9","MoneyTransferPaymentMethod":null,"CalculatedWeight":0,"ExpressWaybillPaymentStatus":"PaymentNotAvailable","SettlementRecipient":"e717a3d0-4b33-11e4-ab6d-005056801329","TrackingStatusName":"\u041e\u0442\u0440\u0438\u043c\u0430\u043d\u043e","RefEW":"7deb223d-254f-11ed-a361-48df37b92096","TypeOfDocument":"Outgoing"},{"MoneyTransferPayerType":null,"MoneyTransferNumber":"","ClientBarcodes":[],"DateTime":"2022-08-26 17:58:05","CounterpartyRecipientDescription":"\u041f\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043d\u0438\u043a","MoneyTransferCreationDate":"0001-01-01 00:00:00","DocumentWeight":0.5,"AfterpaymentOnGoodsCost":"0.00","ArrivalDateTime":"2022-08-27 09:03:17","CityRecipient":"db5c88c4-391c-11dd-90d9-001a92567626","LoyaltyCardRecipient":null,"LoyaltyCardSender":"a0cce922-ffb1-11e8-a8ec-0025b502b06e","DeletionMark":false,"RecipientFullName":"\u0425\u043c\u0430\u0440\u0430 \u0420\u043e\u043c\u0430\u043d \u0421\u0435\u0440\u0433\u0456\u0439\u043e\u0432\u0438\u0447","VolumetricWeight":"0.50","FactualWeight":"0.20","CitySender":"8d5a980d-391c-11dd-90d9-001a92567626","MarketplacePartnerToken":"cea38574-9f54-11e6-b5da-005056887b8d","CounterpartySenderDescription":"\u0422\u041e\u0412 \"\u0415\u041a\u041e\u041c\u0415\u0414\"","InternationalDeliveryType":"","MoneyTransferCommission":0,"CargoDescription":"\u0422\u043e\u0432\u0430\u0440\u0438 \u043c\u0435\u0434\u0438\u0447\u043d\u043e\u0433\u043e \u043f\u0440\u0438\u0437\u043d\u0430\u0447\u0435\u043d\u043d\u044f","SumBeforeCheckWeight":0,"EndDeliveryTime":"0001-01-01 00:00:00","CheckWeight":0,"Note":"","PaymentMethod":"NonCash","CitySenderDescription":"\u041a\u0438\u0457\u0432","CargoType":"Parcel","SenderArchive":false,"AttorneyDescription":null,"PayerType":"Sender","SenderName":"\u041a\u043e\u0432\u0435\u0440\u0433\u0430 \u041e\u043b\u0435\u043d\u0430 \u0412\u0456\u043a\u0442\u043e\u0440\u0456\u0432\u043d\u0430","LinkedEWs":[],"SeatsAmount":"1","TrackingStatusCode":"9","PhoneRecipient":"380674065088","RecipientAddressDescription":"\u043c. \u0416\u0438\u0442\u043e\u043c\u0438\u0440, \u0412\u0456\u0434\u0434\u0456\u043b\u0435\u043d\u043d\u044f \u21161: \u0432\u0443\u043b. \u0413\u0440\u0430\u043d\u0456\u0442\u043d\u0430, 16","AdjustedDate":"0001-01-01 00:00:00","CityRecipientDescription":"\u0416\u0438\u0442\u043e\u043c\u0438\u0440","ScheduledDeliveryDate":"2022-08-27 12:00:00","Cost":2000,"MoneyTransferCash2Card":"0","MoneyTransferAmount":null,"Number":"20450580161867","RecipientArchive":false,"MoneyTransferPayerCommission":"","PhoneSender":"380672470972","RecipientName":"\u0425\u043c\u0430\u0440\u0430 \u0420\u043e\u043c\u0430\u043d \u0421\u0435\u0440\u0433\u0456\u0439\u043e\u0432\u0438\u0447","DocumentCost":70,"ScanSheetInternetNumber":"105-35568854","TrackingUpdateDate":"2022-09-01 09:15:46","BeginDeliveryTime":"0001-01-01 00:00:00","CounterpartyRecipient":"4d0918f7-a4a4-11e7-bddd-d4ae527baed4","CargoAutoReturnDate":"0001-01-01 00:00:00","FirstDayStorage":"2022-09-04 09:03:17","CardMaskedNumber":"","CounterpartySender":"9a55444f-3a21-11dd-90d9-001a92567626","ReceivingDateTime":"2022-09-01 09:15:37","OrderedBackwardDeliveryDocuments":[],"MoneyTransferTransactionDate":"0001-01-01 00:00:00","SettlementSender":"e718a680-4b33-11e4-ab6d-005056801329","TransferStatusGlobalMoneyStatus":"","SenderAddressDescription":"\u043c. \u041a\u0438\u0457\u0432, \u0432\u0443\u043b. \u0421\u0438\u0440\u0435\u0446\u044c\u043a\u0430, 9","MoneyTransferPaymentMethod":null,"CalculatedWeight":0,"ExpressWaybillPaymentStatus":"PaymentNotAvailable","SettlementRecipient":"e717a3d0-4b33-11e4-ab6d-005056801329","TrackingStatusName":"\u041e\u0442\u0440\u0438\u043c\u0430\u043d\u043e","RefEW":"7d58db9f-254f-11ed-a361-48df37b92096","TypeOfDocument":"Outgoing"},{"MoneyTransferPayerType":null,"MoneyTransferNumber":"","ClientBarcodes":[],"DateTime":"2022-08-22 17:29:27","CounterpartyRecipientDescription":"\u0422\u041e\u0412 \"\u041a\u041e\u041c\u041f\u0410\u041d\u0406\u042f \u0421\u041b\u0410\u0412\u041d\u0410\"","MoneyTransferCreationDate":"0001-01-01 00:00:00","DocumentWeight":3.09,"AfterpaymentOnGoodsCost":"0.00","ArrivalDateTime":"2022-08-23 08:46:05","CityRecipient":"db5c88c4-391c-11dd-90d9-001a92567626","LoyaltyCardRecipient":null,"LoyaltyCardSender":"a0cce922-ffb1-11e8-a8ec-0025b502b06e","DeletionMark":false,"RecipientFullName":"\u0425\u043c\u0430\u0440\u0430 \u0420\u043e\u043c\u0430\u043d \u0421\u0435\u0440\u0433\u0456\u0439\u043e\u0432\u0438\u0447","VolumetricWeight":"3.09","FactualWeight":"1.00","CitySender":"8d5a980d-391c-11dd-90d9-001a92567626","MarketplacePartnerToken":"cea38574-9f54-11e6-b5da-005056887b8d","CounterpartySenderDescription":"\u0422\u041e\u0412 \"\u0415\u041a\u041e\u041c\u0415\u0414\"","InternationalDeliveryType":"","MoneyTransferCommission":0,"CargoDescription":"\u0422\u043e\u0432\u0430\u0440\u0438 \u043c\u0435\u0434\u0438\u0447\u043d\u043e\u0433\u043e \u043f\u0440\u0438\u0437\u043d\u0430\u0447\u0435\u043d\u043d\u044f","SumBeforeCheckWeight":90,"EndDeliveryTime":"0001-01-01 00:00:00","CheckWeight":0,"Note":"","PaymentMethod":"NonCash","CitySenderDescription":"\u041a\u0438\u0457\u0432","CargoType":"Parcel","SenderArchive":false,"AttorneyDescription":null,"PayerType":"Sender","SenderName":"\u041a\u043e\u0432\u0435\u0440\u0433\u0430 \u041e\u043b\u0435\u043d\u0430 \u0412\u0456\u043a\u0442\u043e\u0440\u0456\u0432\u043d\u0430","LinkedEWs":[],"SeatsAmount":"1","TrackingStatusCode":"9","PhoneRecipient":"380674065088","RecipientAddressDescription":"\u043c. \u0416\u0438\u0442\u043e\u043c\u0438\u0440, \u0412\u0456\u0434\u0434\u0456\u043b\u0435\u043d\u043d\u044f \u21161: \u0432\u0443\u043b. \u0413\u0440\u0430\u043d\u0456\u0442\u043d\u0430, 16","AdjustedDate":"0001-01-01 00:00:00","CityRecipientDescription":"\u0416\u0438\u0442\u043e\u043c\u0438\u0440","ScheduledDeliveryDate":"2022-08-23 12:00:00","Cost":2000,"MoneyTransferCash2Card":"0","MoneyTransferAmount":null,"Number":"20450578170308","RecipientArchive":false,"MoneyTransferPayerCommission":"","PhoneSender":"380672470972","RecipientName":"\u041f\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043d\u0438\u043a \u041f\u0440\u0435\u0434 \u041f\u0440\u0435\u0434\u0441","DocumentCost":90,"ScanSheetInternetNumber":"105-35454219","TrackingUpdateDate":"2022-08-23 11:25:45","BeginDeliveryTime":"0001-01-01 00:00:00","CounterpartyRecipient":"d3804bc0-c335-11e7-96d0-d4ae527baed4","CargoAutoReturnDate":"0001-01-01 00:00:00","FirstDayStorage":"2022-08-31 08:46:05","CardMaskedNumber":"","CounterpartySender":"9a55444f-3a21-11dd-90d9-001a92567626","ReceivingDateTime":"2022-08-23 11:25:38","OrderedBackwardDeliveryDocuments":[],"MoneyTransferTransactionDate":"0001-01-01 00:00:00","SettlementSender":"e718a680-4b33-11e4-ab6d-005056801329","TransferStatusGlobalMoneyStatus":"","SenderAddressDescription":"\u043c. \u041a\u0438\u0457\u0432, \u0432\u0443\u043b. \u0421\u0438\u0440\u0435\u0446\u044c\u043a\u0430, 9","MoneyTransferPaymentMethod":null,"CalculatedWeight":0,"ExpressWaybillPaymentStatus":"PaymentNotAvailable","SettlementRecipient":"e717a3d0-4b33-11e4-ab6d-005056801329","TrackingStatusName":"\u041e\u0442\u0440\u0438\u043c\u0430\u043d\u043e","RefEW":"d3e2ca79-2226-11ed-a361-48df37b92096","TypeOfDocument":"Outgoing"},{"MoneyTransferPayerType":null,"MoneyTransferNumber":"","ClientBarcodes":[],"DateTime":"2022-08-17 17:43:53","CounterpartyRecipientDescription":"\u0422\u041e\u0412 \"\u041a\u041e\u041c\u041f\u0410\u041d\u0406\u042f \u0421\u041b\u0410\u0412\u041d\u0410\"","MoneyTransferCreationDate":"0001-01-01 00:00:00","DocumentWeight":3.84,"AfterpaymentOnGoodsCost":"0.00","ArrivalDateTime":"2022-08-18 07:52:29","CityRecipient":"db5c88c4-391c-11dd-90d9-001a92567626","LoyaltyCardRecipient":null,"LoyaltyCardSender":"a0cce922-ffb1-11e8-a8ec-0025b502b06e","DeletionMark":false,"RecipientFullName":"\u0425\u043c\u0430\u0440\u0430 \u0420\u043e\u043c\u0430\u043d \u0421\u0435\u0440\u0433\u0456\u0439\u043e\u0432\u0438\u0447","VolumetricWeight":"3.84","FactualWeight":"1.50","CitySender":"8d5a980d-391c-11dd-90d9-001a92567626","MarketplacePartnerToken":"cea38574-9f54-11e6-b5da-005056887b8d","CounterpartySenderDescription":"\u0422\u041e\u0412 \"\u0415\u041a\u041e\u041c\u0415\u0414\"","InternationalDeliveryType":"","MoneyTransferCommission":0,"CargoDescription":"\u0422\u043e\u0432\u0430\u0440\u0438 \u043c\u0435\u0434\u0438\u0447\u043d\u043e\u0433\u043e \u043f\u0440\u0438\u0437\u043d\u0430\u0447\u0435\u043d\u043d\u044f","SumBeforeCheckWeight":90,"EndDeliveryTime":"0001-01-01 00:00:00","CheckWeight":4.15,"Note":"","PaymentMethod":"NonCash","CitySenderDescription":"\u041a\u0438\u0457\u0432","CargoType":"Parcel","SenderArchive":false,"AttorneyDescription":null,"PayerType":"Sender","SenderName":"\u041a\u043e\u0432\u0435\u0440\u0433\u0430 \u041e\u043b\u0435\u043d\u0430 \u0412\u0456\u043a\u0442\u043e\u0440\u0456\u0432\u043d\u0430","LinkedEWs":[],"SeatsAmount":"1","TrackingStatusCode":"9","PhoneRecipient":"380674065088","RecipientAddressDescription":"\u043c. \u0416\u0438\u0442\u043e\u043c\u0438\u0440, \u0412\u0456\u0434\u0434\u0456\u043b\u0435\u043d\u043d\u044f \u21161: \u0432\u0443\u043b. \u0413\u0440\u0430\u043d\u0456\u0442\u043d\u0430, 16","AdjustedDate":"0001-01-01 00:00:00","CityRecipientDescription":"\u0416\u0438\u0442\u043e\u043c\u0438\u0440","ScheduledDeliveryDate":"2022-08-18 12:00:00","Cost":2000,"MoneyTransferCash2Card":"0","MoneyTransferAmount":null,"Number":"20450576345232","RecipientArchive":false,"MoneyTransferPayerCommission":"","PhoneSender":"380672470972","RecipientName":"\u041f\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043d\u0438\u043a \u041f\u0440\u0435\u0434 \u041f\u0440\u0435\u0434\u0441","DocumentCost":90,"ScanSheetInternetNumber":"105-35342278","TrackingUpdateDate":"2022-08-18 10:04:00","BeginDeliveryTime":"0001-01-01 00:00:00","CounterpartyRecipient":"d3804bc0-c335-11e7-96d0-d4ae527baed4","CargoAutoReturnDate":"0001-01-01 00:00:00","FirstDayStorage":"2022-08-26 07:52:29","CardMaskedNumber":"","CounterpartySender":"9a55444f-3a21-11dd-90d9-001a92567626","ReceivingDateTime":"2022-08-18 10:03:45","OrderedBackwardDeliveryDocuments":[],"MoneyTransferTransactionDate":"0001-01-01 00:00:00","SettlementSender":"e718a680-4b33-11e4-ab6d-005056801329","TransferStatusGlobalMoneyStatus":"","SenderAddressDescription":"\u043c. \u041a\u0438\u0457\u0432, \u0432\u0443\u043b. \u0421\u0438\u0440\u0435\u0446\u044c\u043a\u0430, 9","MoneyTransferPaymentMethod":null,"CalculatedWeight":0,"ExpressWaybillPaymentStatus":"PaymentNotAvailable","SettlementRecipient":"e717a3d0-4b33-11e4-ab6d-005056801329","TrackingStatusName":"\u041e\u0442\u0440\u0438\u043c\u0430\u043d\u043e","RefEW":"03a7dd19-1e3b-11ed-a361-48df37b92096","TypeOfDocument":"Outgoing"},{"MoneyTransferPayerType":null,"MoneyTransferNumber":"","ClientBarcodes":[],"DateTime":"2022-08-16 17:06:26","CounterpartyRecipientDescription":"\u0422\u041e\u0412 \"\u041a\u041e\u041c\u041f\u0410\u041d\u0406\u042f \u0421\u041b\u0410\u0412\u041d\u0410\"","MoneyTransferCreationDate":"0001-01-01 00:00:00","DocumentWeight":1.72,"AfterpaymentOnGoodsCost":"0.00","ArrivalDateTime":"2022-08-17 09:07:11","CityRecipient":"db5c88c4-391c-11dd-90d9-001a92567626","LoyaltyCardRecipient":null,"LoyaltyCardSender":"a0cce922-ffb1-11e8-a8ec-0025b502b06e","DeletionMark":false,"RecipientFullName":"\u0425\u043c\u0430\u0440\u0430 \u0420\u043e\u043c\u0430\u043d \u0421\u0435\u0440\u0433\u0456\u0439\u043e\u0432\u0438\u0447","VolumetricWeight":"1.72","FactualWeight":"0.60","CitySender":"8d5a980d-391c-11dd-90d9-001a92567626","MarketplacePartnerToken":"cea38574-9f54-11e6-b5da-005056887b8d","CounterpartySenderDescription":"\u0422\u041e\u0412 \"\u0415\u041a\u041e\u041c\u0415\u0414\"","InternationalDeliveryType":"","MoneyTransferCommission":0,"CargoDescription":"\u0422\u043e\u0432\u0430\u0440\u0438 \u043c\u0435\u0434\u0438\u0447\u043d\u043e\u0433\u043e \u043f\u0440\u0438\u0437\u043d\u0430\u0447\u0435\u043d\u043d\u044f","SumBeforeCheckWeight":70,"EndDeliveryTime":"0001-01-01 00:00:00","CheckWeight":2.21,"Note":"","PaymentMethod":"NonCash","CitySenderDescription":"\u041a\u0438\u0457\u0432","CargoType":"Parcel","SenderArchive":false,"AttorneyDescription":null,"PayerType":"Sender","SenderName":"\u041a\u043e\u0432\u0435\u0440\u0433\u0430 \u041e\u043b\u0435\u043d\u0430 \u0412\u0456\u043a\u0442\u043e\u0440\u0456\u0432\u043d\u0430","LinkedEWs":[],"SeatsAmount":"1","TrackingStatusCode":"9","PhoneRecipient":"380674065088","RecipientAddressDescription":"\u043c. \u0416\u0438\u0442\u043e\u043c\u0438\u0440, \u0412\u0456\u0434\u0434\u0456\u043b\u0435\u043d\u043d\u044f \u21161: \u0432\u0443\u043b. \u0413\u0440\u0430\u043d\u0456\u0442\u043d\u0430, 16","AdjustedDate":"0001-01-01 00:00:00","CityRecipientDescription":"\u0416\u0438\u0442\u043e\u043c\u0438\u0440","ScheduledDeliveryDate":"2022-08-17 12:00:00","Cost":2000,"MoneyTransferCash2Card":"0","MoneyTransferAmount":null,"Number":"20450575881306","RecipientArchive":false,"MoneyTransferPayerCommission":"","PhoneSender":"380672470972","RecipientName":"\u041f\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043d\u0438\u043a \u041f\u0440\u0435\u0434 \u041f\u0440\u0435\u0434\u0441","DocumentCost":70,"ScanSheetInternetNumber":"105-35309668","TrackingUpdateDate":"2022-08-17 11:07:40","BeginDeliveryTime":"0001-01-01 00:00:00","CounterpartyRecipient":"d3804bc0-c335-11e7-96d0-d4ae527baed4","CargoAutoReturnDate":"0001-01-01 00:00:00","FirstDayStorage":"2022-08-25 09:07:11","CardMaskedNumber":"","CounterpartySender":"9a55444f-3a21-11dd-90d9-001a92567626","ReceivingDateTime":"2022-08-17 11:07:31","OrderedBackwardDeliveryDocuments":[],"MoneyTransferTransactionDate":"0001-01-01 00:00:00","SettlementSender":"e718a680-4b33-11e4-ab6d-005056801329","TransferStatusGlobalMoneyStatus":"","SenderAddressDescription":"\u043c. \u041a\u0438\u0457\u0432, \u0432\u0443\u043b. \u0421\u0438\u0440\u0435\u0446\u044c\u043a\u0430, 9","MoneyTransferPaymentMethod":null,"CalculatedWeight":0,"ExpressWaybillPaymentStatus":"PaymentNotAvailable","SettlementRecipient":"e717a3d0-4b33-11e4-ab6d-005056801329","TrackingStatusName":"\u041e\u0442\u0440\u0438\u043c\u0430\u043d\u043e","RefEW":"9e4e36b6-1d6c-11ed-a361-48df37b92096","TypeOfDocument":"Outgoing"},{"MoneyTransferPayerType":null,"MoneyTransferNumber":"","ClientBarcodes":[],"DateTime":"2022-08-16 17:06:25","CounterpartyRecipientDescription":"\u041f\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043d\u0438\u043a","MoneyTransferCreationDate":"0001-01-01 00:00:00","DocumentWeight":0.5,"AfterpaymentOnGoodsCost":"0.00","ArrivalDateTime":"2022-08-17 08:03:38","CityRecipient":"db5c88c4-391c-11dd-90d9-001a92567626","LoyaltyCardRecipient":null,"LoyaltyCardSender":"a0cce922-ffb1-11e8-a8ec-0025b502b06e","DeletionMark":false,"RecipientFullName":"\u0425\u043c\u0430\u0440\u0430 \u0420\u043e\u043c\u0430\u043d","VolumetricWeight":"0.50","FactualWeight":"0.20","CitySender":"8d5a980d-391c-11dd-90d9-001a92567626","MarketplacePartnerToken":"cea38574-9f54-11e6-b5da-005056887b8d","CounterpartySenderDescription":"\u0422\u041e\u0412 \"\u0415\u041a\u041e\u041c\u0415\u0414\"","InternationalDeliveryType":"","MoneyTransferCommission":0,"CargoDescription":"\u0422\u043e\u0432\u0430\u0440\u0438 \u043c\u0435\u0434\u0438\u0447\u043d\u043e\u0433\u043e \u043f\u0440\u0438\u0437\u043d\u0430\u0447\u0435\u043d\u043d\u044f","SumBeforeCheckWeight":0,"EndDeliveryTime":"0001-01-01 00:00:00","CheckWeight":0,"Note":"","PaymentMethod":"NonCash","CitySenderDescription":"\u041a\u0438\u0457\u0432","CargoType":"Parcel","SenderArchive":false,"AttorneyDescription":null,"PayerType":"Sender","SenderName":"\u041a\u043e\u0432\u0435\u0440\u0433\u0430 \u041e\u043b\u0435\u043d\u0430 \u0412\u0456\u043a\u0442\u043e\u0440\u0456\u0432\u043d\u0430","LinkedEWs":[],"SeatsAmount":"1","TrackingStatusCode":"9","PhoneRecipient":"380674065088","RecipientAddressDescription":"\u043c. \u0416\u0438\u0442\u043e\u043c\u0438\u0440, \u0412\u0456\u0434\u0434\u0456\u043b\u0435\u043d\u043d\u044f \u21161: \u0432\u0443\u043b. \u0413\u0440\u0430\u043d\u0456\u0442\u043d\u0430, 16","AdjustedDate":"0001-01-01 00:00:00","CityRecipientDescription":"\u0416\u0438\u0442\u043e\u043c\u0438\u0440","ScheduledDeliveryDate":"2022-08-17 12:00:00","Cost":2000,"MoneyTransferCash2Card":"0","MoneyTransferAmount":null,"Number":"20450575873345","RecipientArchive":false,"MoneyTransferPayerCommission":"","PhoneSender":"380672470972","RecipientName":"\u0425\u043c\u0430\u0440\u0430 \u0420\u043e\u043c\u0430\u043d \u0421\u0435\u0440\u0433\u0456\u0439\u043e\u0432\u0438\u0447","DocumentCost":70,"ScanSheetInternetNumber":"105-35309668","TrackingUpdateDate":"2022-08-17 16:59:49","BeginDeliveryTime":"0001-01-01 00:00:00","CounterpartyRecipient":"4d0918f7-a4a4-11e7-bddd-d4ae527baed4","CargoAutoReturnDate":"0001-01-01 00:00:00","FirstDayStorage":"2022-08-25 08:03:38","CardMaskedNumber":"","CounterpartySender":"9a55444f-3a21-11dd-90d9-001a92567626","ReceivingDateTime":"2022-08-17 16:59:42","OrderedBackwardDeliveryDocuments":[],"MoneyTransferTransactionDate":"0001-01-01 00:00:00","SettlementSender":"e718a680-4b33-11e4-ab6d-005056801329","TransferStatusGlobalMoneyStatus":"","SenderAddressDescription":"\u043c. \u041a\u0438\u0457\u0432, \u0432\u0443\u043b. \u0421\u0438\u0440\u0435\u0446\u044c\u043a\u0430, 9","MoneyTransferPaymentMethod":null,"CalculatedWeight":0,"ExpressWaybillPaymentStatus":"PaymentNotAvailable","SettlementRecipient":"e717a3d0-4b33-11e4-ab6d-005056801329","TrackingStatusName":"\u041e\u0442\u0440\u0438\u043c\u0430\u043d\u043e","RefEW":"9dc0e4ed-1d6c-11ed-a361-48df37b92096","TypeOfDocument":"Outgoing"},{"MoneyTransferPayerType":null,"MoneyTransferNumber":"","ClientBarcodes":[],"DateTime":"2022-08-09 17:16:23","CounterpartyRecipientDescription":"\u0422\u041e\u0412 \"\u041a\u041e\u041c\u041f\u0410\u041d\u0406\u042f \u0421\u041b\u0410\u0412\u041d\u0410\"","MoneyTransferCreationDate":"0001-01-01 00:00:00","DocumentWeight":6.99,"AfterpaymentOnGoodsCost":"0.00","ArrivalDateTime":"2022-08-10 08:15:06","CityRecipient":"db5c88c4-391c-11dd-90d9-001a92567626","LoyaltyCardRecipient":null,"LoyaltyCardSender":"a0cce922-ffb1-11e8-a8ec-0025b502b06e","DeletionMark":false,"RecipientFullName":"\u0425\u043c\u0430\u0440\u0430 \u0420\u043e\u043c\u0430\u043d \u0421\u0435\u0440\u0433\u0456\u0439\u043e\u0432\u0438\u0447","VolumetricWeight":"6.99","FactualWeight":"1.70","CitySender":"8d5a980d-391c-11dd-90d9-001a92567626","MarketplacePartnerToken":"cea38574-9f54-11e6-b5da-005056887b8d","CounterpartySenderDescription":"\u0422\u041e\u0412 \"\u0415\u041a\u041e\u041c\u0415\u0414\"","InternationalDeliveryType":"","MoneyTransferCommission":0,"CargoDescription":"\u0422\u043e\u0432\u0430\u0440\u0438 \u043c\u0435\u0434\u0438\u0447\u043d\u043e\u0433\u043e \u043f\u0440\u0438\u0437\u043d\u0430\u0447\u0435\u043d\u043d\u044f","SumBeforeCheckWeight":90,"EndDeliveryTime":"0001-01-01 00:00:00","CheckWeight":0,"Note":"","PaymentMethod":"NonCash","CitySenderDescription":"\u041a\u0438\u0457\u0432","CargoType":"Parcel","SenderArchive":false,"AttorneyDescription":null,"PayerType":"Sender","SenderName":"\u041a\u043e\u0432\u0435\u0440\u0433\u0430 \u041e\u043b\u0435\u043d\u0430 \u0412\u0456\u043a\u0442\u043e\u0440\u0456\u0432\u043d\u0430","LinkedEWs":[],"SeatsAmount":"1","TrackingStatusCode":"9","PhoneRecipient":"380674065088","RecipientAddressDescription":"\u043c. \u0416\u0438\u0442\u043e\u043c\u0438\u0440, \u0412\u0456\u0434\u0434\u0456\u043b\u0435\u043d\u043d\u044f \u21161: \u0432\u0443\u043b. \u0413\u0440\u0430\u043d\u0456\u0442\u043d\u0430, 16","AdjustedDate":"0001-01-01 00:00:00","CityRecipientDescription":"\u0416\u0438\u0442\u043e\u043c\u0438\u0440","ScheduledDeliveryDate":"2022-08-10 12:00:00","Cost":2000,"MoneyTransferCash2Card":"0","MoneyTransferAmount":null,"Number":"20450572954915","RecipientArchive":false,"MoneyTransferPayerCommission":"","PhoneSender":"380672470972","RecipientName":"\u041f\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043d\u0438\u043a \u041f\u0440\u0435\u0434 \u041f\u0440\u0435\u0434\u0441","DocumentCost":90,"ScanSheetInternetNumber":"105-35134795","TrackingUpdateDate":"2022-08-10 11:15:37","BeginDeliveryTime":"0001-01-01 00:00:00","CounterpartyRecipient":"d3804bc0-c335-11e7-96d0-d4ae527baed4","CargoAutoReturnDate":"0001-01-01 00:00:00","FirstDayStorage":"2022-08-18 08:15:06","CardMaskedNumber":"","CounterpartySender":"9a55444f-3a21-11dd-90d9-001a92567626","ReceivingDateTime":"2022-08-10 11:15:29","OrderedBackwardDeliveryDocuments":[],"MoneyTransferTransactionDate":"0001-01-01 00:00:00","SettlementSender":"e718a680-4b33-11e4-ab6d-005056801329","TransferStatusGlobalMoneyStatus":"","SenderAddressDescription":"\u043c. \u041a\u0438\u0457\u0432, \u0432\u0443\u043b. \u0421\u0438\u0440\u0435\u0446\u044c\u043a\u0430, 9","MoneyTransferPaymentMethod":null,"CalculatedWeight":0,"ExpressWaybillPaymentStatus":"PaymentNotAvailable","SettlementRecipient":"e717a3d0-4b33-11e4-ab6d-005056801329","TrackingStatusName":"\u041e\u0442\u0440\u0438\u043c\u0430\u043d\u043e","RefEW":"d8e34364-17ed-11ed-a361-48df37b92096","TypeOfDocument":"Outgoing"},{"MoneyTransferPayerType":null,"MoneyTransferNumber":"","ClientBarcodes":[],"DateTime":"2022-08-09 17:16:22","CounterpartyRecipientDescription":"\u041f\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043d\u0438\u043a","MoneyTransferCreationDate":"0001-01-01 00:00:00","DocumentWeight":3.45,"AfterpaymentOnGoodsCost":"0.00","ArrivalDateTime":"2022-08-10 08:15:09","CityRecipient":"db5c88c4-391c-11dd-90d9-001a92567626","LoyaltyCardRecipient":null,"LoyaltyCardSender":"a0cce922-ffb1-11e8-a8ec-0025b502b06e","DeletionMark":false,"RecipientFullName":"\u0425\u043c\u0430\u0440\u0430 \u0420\u043e\u043c\u0430\u043d \u0421\u0435\u0440\u0433\u0456\u0439\u043e\u0432\u0438\u0447","VolumetricWeight":"3.45","FactualWeight":"2.20","CitySender":"8d5a980d-391c-11dd-90d9-001a92567626","MarketplacePartnerToken":"cea38574-9f54-11e6-b5da-005056887b8d","CounterpartySenderDescription":"\u0422\u041e\u0412 \"\u0415\u041a\u041e\u041c\u0415\u0414\"","InternationalDeliveryType":"","MoneyTransferCommission":0,"CargoDescription":"\u0422\u043e\u0432\u0430\u0440\u0438 \u043c\u0435\u0434\u0438\u0447\u043d\u043e\u0433\u043e \u043f\u0440\u0438\u0437\u043d\u0430\u0447\u0435\u043d\u043d\u044f","SumBeforeCheckWeight":90,"EndDeliveryTime":"0001-01-01 00:00:00","CheckWeight":3.73,"Note":"","PaymentMethod":"NonCash","CitySenderDescription":"\u041a\u0438\u0457\u0432","CargoType":"Parcel","SenderArchive":false,"AttorneyDescription":null,"PayerType":"Sender","SenderName":"\u041a\u043e\u0432\u0435\u0440\u0433\u0430 \u041e\u043b\u0435\u043d\u0430 \u0412\u0456\u043a\u0442\u043e\u0440\u0456\u0432\u043d\u0430","LinkedEWs":[],"SeatsAmount":"1","TrackingStatusCode":"9","PhoneRecipient":"380674065088","RecipientAddressDescription":"\u043c. \u0416\u0438\u0442\u043e\u043c\u0438\u0440, \u0412\u0456\u0434\u0434\u0456\u043b\u0435\u043d\u043d\u044f \u21161: \u0432\u0443\u043b. \u0413\u0440\u0430\u043d\u0456\u0442\u043d\u0430, 16","AdjustedDate":"0001-01-01 00:00:00","CityRecipientDescription":"\u0416\u0438\u0442\u043e\u043c\u0438\u0440","ScheduledDeliveryDate":"2022-08-10 12:00:00","Cost":2000,"MoneyTransferCash2Card":"0","MoneyTransferAmount":null,"Number":"20450572950036","RecipientArchive":false,"MoneyTransferPayerCommission":"","PhoneSender":"380672470972","RecipientName":"\u0425\u043c\u0430\u0440\u0430 \u0420\u043e\u043c\u0430\u043d \u0421\u0435\u0440\u0433\u0456\u0439\u043e\u0432\u0438\u0447","DocumentCost":90,"ScanSheetInternetNumber":"105-35134795","TrackingUpdateDate":"2022-08-10 11:15:37","BeginDeliveryTime":"0001-01-01 00:00:00","CounterpartyRecipient":"4d0918f7-a4a4-11e7-bddd-d4ae527baed4","CargoAutoReturnDate":"0001-01-01 00:00:00","FirstDayStorage":"2022-08-18 08:15:09","CardMaskedNumber":"","CounterpartySender":"9a55444f-3a21-11dd-90d9-001a92567626","ReceivingDateTime":"2022-08-10 11:15:29","OrderedBackwardDeliveryDocuments":[],"MoneyTransferTransactionDate":"0001-01-01 00:00:00","SettlementSender":"e718a680-4b33-11e4-ab6d-005056801329","TransferStatusGlobalMoneyStatus":"","SenderAddressDescription":"\u043c. \u041a\u0438\u0457\u0432, \u0432\u0443\u043b. \u0421\u0438\u0440\u0435\u0446\u044c\u043a\u0430, 9","MoneyTransferPaymentMethod":null,"CalculatedWeight":0,"ExpressWaybillPaymentStatus":"PaymentNotAvailable","SettlementRecipient":"e717a3d0-4b33-11e4-ab6d-005056801329","TrackingStatusName":"\u041e\u0442\u0440\u0438\u043c\u0430\u043d\u043e","RefEW":"d8983ebf-17ed-11ed-a361-48df37b92096","TypeOfDocument":"Outgoing"},{"MoneyTransferPayerType":null,"MoneyTransferNumber":"","ClientBarcodes":[],"DateTime":"2022-08-05 17:28:22","CounterpartyRecipientDescription":"\u0422\u041e\u0412 \"\u041a\u041e\u041c\u041f\u0410\u041d\u0406\u042f \u0421\u041b\u0410\u0412\u041d\u0410\"","MoneyTransferCreationDate":"0001-01-01 00:00:00","DocumentWeight":2.25,"AfterpaymentOnGoodsCost":"0.00","ArrivalDateTime":"2022-08-06 08:44:13","CityRecipient":"db5c88c4-391c-11dd-90d9-001a92567626","LoyaltyCardRecipient":null,"LoyaltyCardSender":"a0cce922-ffb1-11e8-a8ec-0025b502b06e","DeletionMark":false,"RecipientFullName":"\u0425\u043c\u0430\u0440\u0430 \u0420\u043e\u043c\u0430\u043d","VolumetricWeight":"2.25","FactualWeight":"1.00","CitySender":"8d5a980d-391c-11dd-90d9-001a92567626","MarketplacePartnerToken":"cea38574-9f54-11e6-b5da-005056887b8d","CounterpartySenderDescription":"\u0422\u041e\u0412 \"\u0415\u041a\u041e\u041c\u0415\u0414\"","InternationalDeliveryType":"","MoneyTransferCommission":0,"CargoDescription":"\u0422\u043e\u0432\u0430\u0440\u0438 \u043c\u0435\u0434\u0438\u0447\u043d\u043e\u0433\u043e \u043f\u0440\u0438\u0437\u043d\u0430\u0447\u0435\u043d\u043d\u044f","SumBeforeCheckWeight":90,"EndDeliveryTime":"0001-01-01 00:00:00","CheckWeight":0,"Note":"","PaymentMethod":"NonCash","CitySenderDescription":"\u041a\u0438\u0457\u0432","CargoType":"Parcel","SenderArchive":false,"AttorneyDescription":null,"PayerType":"Sender","SenderName":"\u041a\u043e\u0432\u0435\u0440\u0433\u0430 \u041e\u043b\u0435\u043d\u0430 \u0412\u0456\u043a\u0442\u043e\u0440\u0456\u0432\u043d\u0430","LinkedEWs":[],"SeatsAmount":"1","TrackingStatusCode":"9","PhoneRecipient":"380674065088","RecipientAddressDescription":"\u043c. \u0416\u0438\u0442\u043e\u043c\u0438\u0440, \u0412\u0456\u0434\u0434\u0456\u043b\u0435\u043d\u043d\u044f \u21161: \u0432\u0443\u043b. \u0413\u0440\u0430\u043d\u0456\u0442\u043d\u0430, 16","AdjustedDate":"0001-01-01 00:00:00","CityRecipientDescription":"\u0416\u0438\u0442\u043e\u043c\u0438\u0440","ScheduledDeliveryDate":"2022-08-06 12:00:00","Cost":2000,"MoneyTransferCash2Card":"0","MoneyTransferAmount":null,"Number":"20450571379302","RecipientArchive":false,"MoneyTransferPayerCommission":"","PhoneSender":"380672470972","RecipientName":"\u041f\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043d\u0438\u043a \u041f\u0440\u0435\u0434 \u041f\u0440\u0435\u0434\u0441","DocumentCost":90,"ScanSheetInternetNumber":"105-35045464","TrackingUpdateDate":"2022-08-08 09:49:17","BeginDeliveryTime":"0001-01-01 00:00:00","CounterpartyRecipient":"d3804bc0-c335-11e7-96d0-d4ae527baed4","CargoAutoReturnDate":"0001-01-01 00:00:00","FirstDayStorage":"2022-08-14 08:44:13","CardMaskedNumber":"","CounterpartySender":"9a55444f-3a21-11dd-90d9-001a92567626","ReceivingDateTime":"2022-08-08 09:49:07","OrderedBackwardDeliveryDocuments":[],"MoneyTransferTransactionDate":"0001-01-01 00:00:00","SettlementSender":"e718a680-4b33-11e4-ab6d-005056801329","TransferStatusGlobalMoneyStatus":"","SenderAddressDescription":"\u043c. \u041a\u0438\u0457\u0432, \u0432\u0443\u043b. \u0421\u0438\u0440\u0435\u0446\u044c\u043a\u0430, 9","MoneyTransferPaymentMethod":null,"CalculatedWeight":0,"ExpressWaybillPaymentStatus":"PaymentNotAvailable","SettlementRecipient":"e717a3d0-4b33-11e4-ab6d-005056801329","TrackingStatusName":"\u041e\u0442\u0440\u0438\u043c\u0430\u043d\u043e","RefEW":"dbc6d548-14ca-11ed-a361-48df37b92096","TypeOfDocument":"Outgoing"},{"MoneyTransferPayerType":null,"MoneyTransferNumber":"","ClientBarcodes":[],"DateTime":"2022-08-05 17:28:19","CounterpartyRecipientDescription":"\u041f\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043d\u0438\u043a","MoneyTransferCreationDate":"0001-01-01 00:00:00","DocumentWeight":0.75,"AfterpaymentOnGoodsCost":"0.00","ArrivalDateTime":"2022-08-06 08:39:55","CityRecipient":"db5c88c4-391c-11dd-90d9-001a92567626","LoyaltyCardRecipient":null,"LoyaltyCardSender":"a0cce922-ffb1-11e8-a8ec-0025b502b06e","DeletionMark":false,"RecipientFullName":"\u0425\u043c\u0430\u0440\u0430 \u0420\u043e\u043c\u0430\u043d","VolumetricWeight":"0.75","FactualWeight":"0.30","CitySender":"8d5a980d-391c-11dd-90d9-001a92567626","MarketplacePartnerToken":"cea38574-9f54-11e6-b5da-005056887b8d","CounterpartySenderDescription":"\u0422\u041e\u0412 \"\u0415\u041a\u041e\u041c\u0415\u0414\"","InternationalDeliveryType":"","MoneyTransferCommission":0,"CargoDescription":"\u0422\u043e\u0432\u0430\u0440\u0438 \u043c\u0435\u0434\u0438\u0447\u043d\u043e\u0433\u043e \u043f\u0440\u0438\u0437\u043d\u0430\u0447\u0435\u043d\u043d\u044f","SumBeforeCheckWeight":0,"EndDeliveryTime":"0001-01-01 00:00:00","CheckWeight":0,"Note":"","PaymentMethod":"NonCash","CitySenderDescription":"\u041a\u0438\u0457\u0432","CargoType":"Parcel","SenderArchive":false,"AttorneyDescription":null,"PayerType":"Sender","SenderName":"\u041a\u043e\u0432\u0435\u0440\u0433\u0430 \u041e\u043b\u0435\u043d\u0430 \u0412\u0456\u043a\u0442\u043e\u0440\u0456\u0432\u043d\u0430","LinkedEWs":[],"SeatsAmount":"1","TrackingStatusCode":"9","PhoneRecipient":"380674065088","RecipientAddressDescription":"\u043c. \u0416\u0438\u0442\u043e\u043c\u0438\u0440, \u0412\u0456\u0434\u0434\u0456\u043b\u0435\u043d\u043d\u044f \u21161: \u0432\u0443\u043b. \u0413\u0440\u0430\u043d\u0456\u0442\u043d\u0430, 16","AdjustedDate":"0001-01-01 00:00:00","CityRecipientDescription":"\u0416\u0438\u0442\u043e\u043c\u0438\u0440","ScheduledDeliveryDate":"2022-08-06 12:00:00","Cost":2000,"MoneyTransferCash2Card":"0","MoneyTransferAmount":null,"Number":"20450571355473","RecipientArchive":false,"MoneyTransferPayerCommission":"","PhoneSender":"380672470972","RecipientName":"\u0425\u043c\u0430\u0440\u0430 \u0420\u043e\u043c\u0430\u043d \u0421\u0435\u0440\u0433\u0456\u0439\u043e\u0432\u0438\u0447","DocumentCost":70,"ScanSheetInternetNumber":"105-35045464","TrackingUpdateDate":"2022-08-08 09:49:17","BeginDeliveryTime":"0001-01-01 00:00:00","CounterpartyRecipient":"4d0918f7-a4a4-11e7-bddd-d4ae527baed4","CargoAutoReturnDate":"0001-01-01 00:00:00","FirstDayStorage":"2022-08-14 08:39:55","CardMaskedNumber":"","CounterpartySender":"9a55444f-3a21-11dd-90d9-001a92567626","ReceivingDateTime":"2022-08-08 09:49:07","OrderedBackwardDeliveryDocuments":[],"MoneyTransferTransactionDate":"0001-01-01 00:00:00","SettlementSender":"e718a680-4b33-11e4-ab6d-005056801329","TransferStatusGlobalMoneyStatus":"","SenderAddressDescription":"\u043c. \u041a\u0438\u0457\u0432, \u0432\u0443\u043b. \u0421\u0438\u0440\u0435\u0446\u044c\u043a\u0430, 9","MoneyTransferPaymentMethod":null,"CalculatedWeight":0,"ExpressWaybillPaymentStatus":"PaymentNotAvailable","SettlementRecipient":"e717a3d0-4b33-11e4-ab6d-005056801329","TrackingStatusName":"\u041e\u0442\u0440\u0438\u043c\u0430\u043d\u043e","RefEW":"da874426-14ca-11ed-a361-48df37b92096","TypeOfDocument":"Outgoing"}]}],"errors":[],"warnings":[],"info":{"totalCount":28},"messageCodes":[],"errorCodes":[],"warningCodes":[],"infoCodes":[]}
+2022-09-03 20:10:07 INFO  InternetDocumentRequest:57 - success: true
+2022-09-03 20:13:17 INFO  HttpRequestCreator:33 - getBodyFromResponse: {"success":true,"data":[{"Description":"\u0422\u041e\u0412 \"\u0415\u041a\u041e\u041c\u0415\u0414\"","Ref":"29391d40-3c56-11ea-9937-005056881c6b","City":"00000000-0000-0000-0000-000000000000","Counterparty":"9a55444f-3a21-11dd-90d9-001a92567626","FirstName":"","LastName":"","MiddleName":"","CounterpartyFullName":"\u0422\u041e\u0412\u0410\u0420\u0418\u0421\u0422\u0412\u041e \u0417 \u041e\u0411\u041c\u0415\u0416\u0415\u041d\u041e\u042e \u0412\u0406\u0414\u041f\u041e\u0412\u0406\u0414\u0410\u041b\u042c\u041d\u0406\u0421\u0422\u042e \"\u0415\u041a\u041e\u041c\u0415\u0414\"","OwnershipFormRef":"7f0f351d-2519-11df-be9a-000c291af1b3","OwnershipFormDescription":"\u0422\u041e\u0412","EDRPOU":"22922786","CounterpartyType":"Organization","TrustedCounterpartyType":"","CityDescription":""}],"errors":[],"warnings":[],"info":{"totalCount":1},"messageCodes":[],"errorCodes":[],"warningCodes":[],"infoCodes":[]}
+2022-09-03 20:41:58 INFO  HttpRequestCreator:33 - getBodyFromResponse: {"success":true,"data":[{"Description":"\u0422\u041e\u0412 \"\u0415\u041a\u041e\u041c\u0415\u0414\"","Ref":"29391d40-3c56-11ea-9937-005056881c6b","City":"00000000-0000-0000-0000-000000000000","Counterparty":"9a55444f-3a21-11dd-90d9-001a92567626","FirstName":"","LastName":"","MiddleName":"","CounterpartyFullName":"\u0422\u041e\u0412\u0410\u0420\u0418\u0421\u0422\u0412\u041e \u0417 \u041e\u0411\u041c\u0415\u0416\u0415\u041d\u041e\u042e \u0412\u0406\u0414\u041f\u041e\u0412\u0406\u0414\u0410\u041b\u042c\u041d\u0406\u0421\u0422\u042e \"\u0415\u041a\u041e\u041c\u0415\u0414\"","OwnershipFormRef":"7f0f351d-2519-11df-be9a-000c291af1b3","OwnershipFormDescription":"\u0422\u041e\u0412","EDRPOU":"22922786","CounterpartyType":"Organization","TrustedCounterpartyType":"","CityDescription":""}],"errors":[],"warnings":[],"info":{"totalCount":1},"messageCodes":[],"errorCodes":[],"warningCodes":[],"infoCodes":[]}
