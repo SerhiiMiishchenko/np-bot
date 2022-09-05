@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d279824-7519-4025-b202-c495a299966f" name="Changes" comment="merge with handler-branch" />
+    <list default="true" id="3d279824-7519-4025-b202-c495a299966f" name="Changes" comment="deleted log.log">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mishchuk7/model/InternetDocumentRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mishchuk7/model/InternetDocumentRequest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -386,7 +389,21 @@
       <option name="project" value="LOCAL" />
       <updated>1662298682030</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="changed start command text">
+      <created>1662298879295</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1662298879295</updated>
+    </task>
+    <task id="LOCAL-00040" summary="deleted log.log">
+      <created>1662298996836</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1662298996836</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -401,8 +418,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added spring actuator to the pom.xml" />
-    <MESSAGE value="deleted spring actuator from pom because app failed" />
     <MESSAGE value="changed Procfile 2" />
     <MESSAGE value="remove spring boot" />
     <MESSAGE value="changed pom.xml, add log4j.properties" />
@@ -426,6 +441,8 @@
     <MESSAGE value="added method Long getUpdateId(Update update)" />
     <MESSAGE value="added tests for HttpRequestCreator" />
     <MESSAGE value="merge with handler-branch" />
-    <option name="LAST_COMMIT_MESSAGE" value="merge with handler-branch" />
+    <MESSAGE value="changed start command text" />
+    <MESSAGE value="deleted log.log" />
+    <option name="LAST_COMMIT_MESSAGE" value="deleted log.log" />
   </component>
 </project>

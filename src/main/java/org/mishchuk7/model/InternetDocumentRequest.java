@@ -86,6 +86,14 @@ public class InternetDocumentRequest {
                 }
             }
         }
+        JsonNode errors = root.path("errors");
+        for (JsonNode node : errors) {
+            log.info("errors: [" + node.asText() + "]");
+        }
+        JsonNode warnings = root.path("warnings");
+        for (JsonNode node : warnings) {
+            log.info("warnings: [" + node.asText() + "]");
+        }
         return documentList;
     }
 
