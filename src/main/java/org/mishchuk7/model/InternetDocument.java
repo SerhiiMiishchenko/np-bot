@@ -3,6 +3,8 @@ package org.mishchuk7.model;
 import lombok.Builder;
 import lombok.Data;
 import org.mishchuk7.enums.CargoType;
+import org.mishchuk7.enums.StatusCode;
+import org.mishchuk7.enums.StatusColor;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -34,9 +36,9 @@ public class InternetDocument {
 
     @Override
     public String toString() {
-        return "<b>Посилка:</b>\n" + number +
+        return "<b>Посилка:</b>\n" + "<u>" + number + "</u>" +
                 "\n<b>Дата створення:</b>\n" + getDate(dateTime) +
-                "\n<b>Статус:</b>\n" + trackingStatusName +
+                "\n<b>Статус:</b>\n" + trackingStatusName + getStatusColor(trackingStatusCode).getColor() +
                 "\n<b>Тип відправлення:</b>\n" + CargoType.getDescriptionFromInput(cargoType) +
                 "\n<b>Кількість місць:</b>\n" + seatsAmount +
                 "\n<b>Вага:</b>\n" + documentWeight +
@@ -47,9 +49,17 @@ public class InternetDocument {
                 "\n<b>Адреса доставки:</b>\n" + recipientAddressDescription +
                 "\n<b>Отримувач:</b>\n" + counterpartyRecipientDescription +
                 "\n" + recipientName +
-                "\n" + phoneRecipient + "\n" +
-                "-".repeat(25) +
-                "\n";
+                "\n" + phoneRecipient + "\n";
+    }
+
+    private StatusColor getStatusColor(String statusCode) {
+        StatusColor color = StatusColor.GREY;
+        for (StatusCode code : StatusCode.values()) {
+            if (code.getId().equalsIgnoreCase(statusCode)) {
+                color = code.getColor();
+            }
+        }
+        return color;
     }
 
     private String getDate(String dateTime) {
