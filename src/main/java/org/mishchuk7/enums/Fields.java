@@ -11,6 +11,7 @@ public enum Fields {
     OWNER_SHIP_FORM_DESCRIPTION("OwnershipFormDescription"),
     EDRPOU("EDRPOU"),
     COUNTERPARTY_TYPE("CounterpartyType"),
+    SCHEDULED_DELIVERY_DATE("ScheduledDeliveryDate"),
     FIND_BY_DATA("FindByData"),
     PAGE("Page"),
     LIMIT("Limit"),
