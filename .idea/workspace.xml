@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d279824-7519-4025-b202-c495a299966f" name="Changes" comment="log changed in the InternetDocumentRequest findDocumentByData. added errors and warnings">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/mishchuk7/enums/StatusCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/mishchuk7/enums/StatusColor.java" afterDir="false" />
+    <list default="true" id="3d279824-7519-4025-b202-c495a299966f" name="Changes" comment="added errors and warnings to the log">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mishchuk7/enums/CargoType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mishchuk7/enums/CargoType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mishchuk7/enums/Fields.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mishchuk7/enums/Fields.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/mishchuk7/model/InternetDocument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mishchuk7/model/InternetDocument.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/mishchuk7/model/InternetDocumentRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mishchuk7/model/InternetDocumentRequest.java" afterDir="false" />
     </list>
@@ -413,7 +413,35 @@
       <option name="project" value="LOCAL" />
       <updated>1662397574747</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="added StatusCode enum(codes + description)">
+      <created>1662404917863</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1662404917863</updated>
+    </task>
+    <task id="LOCAL-00043" summary="added StatusColor enum">
+      <created>1662404967690</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1662404967690</updated>
+    </task>
+    <task id="LOCAL-00044" summary="added method getStatusColor(String statusCode) and getStatusColor(trackingStatusCode).getColor() to the InternetDocument.toString">
+      <created>1662405102717</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1662405102717</updated>
+    </task>
+    <task id="LOCAL-00045" summary="added errors and warnings to the log">
+      <created>1662405192082</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1662405192082</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -428,10 +456,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="remove spring boot" />
-    <MESSAGE value="changed pom.xml, add log4j.properties" />
-    <MESSAGE value="changed pom.xml" />
-    <MESSAGE value="changed Procfile" />
     <MESSAGE value="changed java version" />
     <MESSAGE value="add log4j.properties" />
     <MESSAGE value="merge keyboard-branch" />
@@ -453,6 +477,10 @@
     <MESSAGE value="changed start command text" />
     <MESSAGE value="deleted log.log" />
     <MESSAGE value="log changed in the InternetDocumentRequest findDocumentByData. added errors and warnings" />
-    <option name="LAST_COMMIT_MESSAGE" value="log changed in the InternetDocumentRequest findDocumentByData. added errors and warnings" />
+    <MESSAGE value="added StatusCode enum(codes + description)" />
+    <MESSAGE value="added StatusColor enum" />
+    <MESSAGE value="added method getStatusColor(String statusCode) and getStatusColor(trackingStatusCode).getColor() to the InternetDocument.toString" />
+    <MESSAGE value="added errors and warnings to the log" />
+    <option name="LAST_COMMIT_MESSAGE" value="added errors and warnings to the log" />
   </component>
 </project>

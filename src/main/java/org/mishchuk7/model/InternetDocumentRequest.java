@@ -62,6 +62,7 @@ public class InternetDocumentRequest {
                 for (JsonNode node : result) {
                     InternetDocument doc = InternetDocument.builder()
                             .dateTime(node.path(DATE_TIME.getField()).asText())
+                            .scheduledDeliveryDate(node.path(SCHEDULED_DELIVERY_DATE.getField()).asText())
                             .counterpartyRecipientDescription(node.path(COUNTERPARTY_RECIPIENT_DESCRIPTION.getField()).asText())
                             .documentWeight(node.path(DOCUMENT_WEIGHT.getField()).asText())
                             .arrivalDateTime(node.path(ARRIVAL_DATE_TIME.getField()).asText())
