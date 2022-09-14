@@ -1,5 +1,9 @@
 package org.mishchuk7.enums;
 
+/**
+ * Possible cargo types.
+ * @author Serhii Mishchenko
+* */
 public enum CargoType {
     PARCEL("Посилка"),
     CARGO("Вантаж"),
@@ -17,11 +21,17 @@ public enum CargoType {
         return description;
     }
 
-    public static String getDescriptionFromInput(String input) {
+    /**
+     *Parses the cargo description from the API response.
+     *
+     * @param response from the API
+     * @return cargo type description
+     */
+    public static String getDescriptionFromInput(String response) {
         for (CargoType type : values()) {
-            if (input.equalsIgnoreCase(type.toString()))
+            if (response.equalsIgnoreCase(type.toString()))
                 return type.getDescription();
         }
-        return input;
+        return response;
     }
 }
