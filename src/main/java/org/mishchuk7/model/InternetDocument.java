@@ -52,7 +52,7 @@ public class InternetDocument {
         return "<b>Посилка:</b> " + "<u>" + number + "</u>" +
                 "\n<b>Дата створення:</b> " + getDateAndTime(dateTime) +
                 "\n<b>Статус:</b> " + trackingStatusName + getStatusColor(trackingStatusCode).getColor() +
-                "<b>" + description + "</b>\n" + date +
+                "\n<b>" + description + "</b>\n" + date +
                 "\n<b>Тип відправлення:</b> " + CargoType.getDescriptionFromInput(cargoType) +
                 "\n<b>Кількість місць:</b> " + seatsAmount +
                 "\n<b>Вага:</b> " + documentWeight +
@@ -63,8 +63,8 @@ public class InternetDocument {
                 "\n<b>Адреса доставки:</b>\n" + recipientAddressDescription +
                 "\n<b>Отримувач:</b>\n" + counterpartyRecipientDescription +
                 "\n" + recipientName +
-                "\n" + phoneRecipient + "\n" +
-                "\n<b>Вартість доставки:</b> " + documentCost +
+                "\n" + phoneRecipient +
+                "\n<b>Вартість доставки:</b> " + documentCost + " грн" +
                 "\n<b>Платник за доставку:</b> " + payer;
     }
 
