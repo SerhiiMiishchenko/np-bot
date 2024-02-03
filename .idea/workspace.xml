@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d279824-7519-4025-b202-c495a299966f" name="Changes" comment="add PayerType">
+    <list default="true" id="3d279824-7519-4025-b202-c495a299966f" name="Changes" comment="add PayerType; document Cost and payer type was added">
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mishchuk7/enums/Fields.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mishchuk7/enums/Fields.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mishchuk7/model/InternetDocument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mishchuk7/model/InternetDocument.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mishchuk7/model/InternetDocumentRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mishchuk7/model/InternetDocumentRequest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +64,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
+    "settings.editor.selected.configurable": "Docker"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -486,7 +484,7 @@
       <option name="project" value="LOCAL" />
       <updated>1663151562282</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -504,7 +502,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added String cutTooLongResult(String result) method in the CallbackQueryHandler" />
     <MESSAGE value="changed message from start command" />
     <MESSAGE value="added the arrow down sign in the handle method" />
     <MESSAGE value="deleted method isTextMessage(Update update)" />
@@ -529,6 +526,7 @@
     <MESSAGE value="added InternetDocument.getDateAndTime, InternetDocument.makeDateByColor, InternetDocument.makeDescriptionByColor; changed InternetDocument.toString" />
     <MESSAGE value="added SCHEDULED_DELIVERY_DATE" />
     <MESSAGE value="add PayerType" />
-    <option name="LAST_COMMIT_MESSAGE" value="add PayerType" />
+    <MESSAGE value="add PayerType; document Cost and payer type was added" />
+    <option name="LAST_COMMIT_MESSAGE" value="add PayerType; document Cost and payer type was added" />
   </component>
 </project>
