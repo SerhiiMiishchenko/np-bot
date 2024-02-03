@@ -12,5 +12,5 @@ RUN mvn clean package
 FROM amazoncorretto:11
 
 # copy jar from the first stage
-COPY --from=builder target/np-bot-0.2.0-jar-with-dependencies.jar app.jar
+COPY --from=builder target/np-bot-jar-with-dependencies.jar app.jar
 CMD ["java", "-jar", "/app.jar"]
