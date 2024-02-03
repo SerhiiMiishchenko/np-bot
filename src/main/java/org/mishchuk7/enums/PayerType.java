@@ -1,5 +1,8 @@
 package org.mishchuk7.enums;
 
+import lombok.Getter;
+
+@Getter
 public enum PayerType {
     SENDER("Sender", "Відправник"),
     RECIPIENT("Recipient", "Одержувач"),
@@ -13,18 +16,4 @@ public enum PayerType {
         this.description = description;
     }
 
-    public String getRef() {
-        return ref;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public static String descriptionOf(String type) {
-        for (PayerType payerType : values()) {
-            if (payerType.getRef().equalsIgnoreCase(type)) return payerType.getDescription();
-        }
-        return "";
-    }
 }
