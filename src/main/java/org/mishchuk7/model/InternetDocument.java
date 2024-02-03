@@ -34,6 +34,7 @@ public class InternetDocument {
     private String senderAddressDescription;
     private String trackingStatusName;
     private String scheduledDeliveryDate;
+    private String documentCost;
 
     @Override
     public String toString() {
@@ -55,7 +56,8 @@ public class InternetDocument {
                 "\n<b>Адреса доставки:</b>\n" + recipientAddressDescription +
                 "\n<b>Отримувач:</b>\n" + counterpartyRecipientDescription +
                 "\n" + recipientName +
-                "\n" + phoneRecipient + "\n";
+                "\n" + phoneRecipient + "\n" +
+                "\n" +
     }
 
     private String makeDescriptionByColor(StatusColor color) {
