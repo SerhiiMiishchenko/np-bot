@@ -82,6 +82,7 @@ public class InternetDocumentRequest {
                             .scanSheetInternetNumber(node.path(SCAN_SHEET_INTERNET_NUMBER.getField()).asText())
                             .senderAddressDescription(node.path(SENDER_ADDRESS_DESCRIPTION.getField()).asText())
                             .trackingStatusName(node.path(TRACKING_STATUS_NAME.getField()).asText())
+                            .documentCost(node.path(DOCUMENT_COST.getField()).asText())
                             .build();
                     documentList.add(doc);
                 }

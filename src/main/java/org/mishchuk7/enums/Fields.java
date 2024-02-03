@@ -36,7 +36,8 @@ public enum Fields {
     RECIPIENT_NAME("RecipientName"),
     SCAN_SHEET_INTERNET_NUMBER("ScanSheetInternetNumber"),
     SENDER_ADDRESS_DESCRIPTION("SenderAddressDescription"),
-    TRACKING_STATUS_NAME("TrackingStatusName");
+    TRACKING_STATUS_NAME("TrackingStatusName"),
+    DOCUMENT_COST("DocumentCost");
 
     private final String field;
 

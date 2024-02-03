@@ -3,11 +3,13 @@ package org.mishchuk7.model;
 import lombok.Builder;
 import lombok.Data;
 import org.mishchuk7.enums.CargoType;
+import org.mishchuk7.enums.PayerType;
 import org.mishchuk7.enums.StatusCode;
 import org.mishchuk7.enums.StatusColor;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Arrays;
 
 @Data
 @Builder
@@ -41,14 +43,19 @@ public class InternetDocument {
         StatusColor color = getStatusColor(trackingStatusCode);
         String date = getDateAndTime(makeDateByColor(color));
         String description = makeDescriptionByColor(color);
+        String payer = Arrays.stream(PayerType.values())
+                .filter(p -> p.getRef().equalsIgnoreCase(payerType))
+                .map(PayerType::getDescription)
+                .findFirst()
+                .orElse("Unknown payer type");
 
-        return "<b>Посилка:</b>\n" + "<u>" + number + "</u>" +
-                "\n<b>Дата створення:</b>\n" + getDateAndTime(dateTime) +
-                "\n<b>Статус:</b>\n" + trackingStatusName + getStatusColor(trackingStatusCode).getColor() +
-                "\n<b>" + description + "</b>\n" + date +
-                "\n<b>Тип відправлення:</b>\n" + CargoType.getDescriptionFromInput(cargoType) +
-                "\n<b>Кількість місць:</b>\n" + seatsAmount +
-                "\n<b>Вага:</b>\n" + documentWeight +
+        return "<b>Посилка:</b> " + "<u>" + number + "</u>" +
+                "\n<b>Дата створення:</b> " + getDateAndTime(dateTime) +
+                "\n<b>Статус:</b> " + trackingStatusName + getStatusColor(trackingStatusCode).getColor() +
+                "<b>" + description + "</b>\n" + date +
+                "\n<b>Тип відправлення:</b> " + CargoType.getDescriptionFromInput(cargoType) +
+                "\n<b>Кількість місць:</b> " + seatsAmount +
+                "\n<b>Вага:</b> " + documentWeight +
                 "\n<b>Від:</b>\n" + counterpartySenderDescription +
                 "\n" + senderName +
                 "\n" + phoneSender +
@@ -57,7 +64,8 @@ public class InternetDocument {
                 "\n<b>Отримувач:</b>\n" + counterpartyRecipientDescription +
                 "\n" + recipientName +
                 "\n" + phoneRecipient + "\n" +
-                "\n" +
+                "\n<b>Вартість доставки:</b> " + documentCost +
+                "\n<b>Платник за доставку:</b> " + payer;
     }
 
     private String makeDescriptionByColor(StatusColor color) {
