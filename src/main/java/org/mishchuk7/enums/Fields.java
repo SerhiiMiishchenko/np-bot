@@ -1,16 +1,9 @@
 package org.mishchuk7.enums;
 
+import lombok.Getter;
+
+@Getter
 public enum Fields {
-    DESCRIPTION("Description"),
-    REF("Ref"),
-    CITY("City"),
-    COUNTERPARTY("Counterparty"),
-    FIRST_NAME("FirstName"),
-    LAST_NAME("LastName"),
-    MIDDLE_NAME("MiddleName"),
-    OWNER_SHIP_FORM_DESCRIPTION("OwnershipFormDescription"),
-    EDRPOU("EDRPOU"),
-    COUNTERPARTY_TYPE("CounterpartyType"),
     SCHEDULED_DELIVERY_DATE("ScheduledDeliveryDate"),
     FIND_BY_DATA("FindByData"),
     PAGE("Page"),
@@ -45,7 +38,4 @@ public enum Fields {
         this.field = field;
     }
 
-    public String getField() {
-        return field;
-    }
 }

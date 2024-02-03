@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d279824-7519-4025-b202-c495a299966f" name="Changes" comment="some minor changes">
+    <list default="true" id="3d279824-7519-4025-b202-c495a299966f" name="Changes" comment="change Dockerfile">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fly.toml" beforeDir="false" afterPath="$PROJECT_DIR$/fly.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mishchuk7/enums/Fields.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mishchuk7/enums/Fields.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mishchuk7/hanlders/CallbackQueryHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mishchuk7/hanlders/CallbackQueryHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mishchuk7/model/InternetDocument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mishchuk7/model/InternetDocument.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mishchuk7/model/InternetDocumentRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mishchuk7/model/InternetDocumentRequest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -493,7 +497,7 @@
       <option name="project" value="LOCAL" />
       <updated>1663151562282</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -511,7 +515,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added new class EcomedNovaBotSender" />
     <MESSAGE value="added new field EcomedNovaBotSender ecomedNovaBotSender" />
     <MESSAGE value="added method List&lt;UserRequestHandler&gt; getHandlers() and field Dispatcher dispatcher" />
     <MESSAGE value="added method Long getUpdateId(Update update)" />
@@ -533,9 +536,10 @@
     <MESSAGE value="add Dockerfile" />
     <MESSAGE value="add fly.toml" />
     <MESSAGE value="change pom.xml" />
-    <MESSAGE value="change Dockerfile" />
     <MESSAGE value="change pom" />
     <MESSAGE value="some minor changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="some minor changes" />
+    <MESSAGE value="remove expose port from Dockerfile" />
+    <MESSAGE value="change Dockerfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="change Dockerfile" />
   </component>
 </project>

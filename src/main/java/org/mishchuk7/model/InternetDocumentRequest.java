@@ -42,7 +42,7 @@ public class InternetDocumentRequest {
         if (result.length() == 11) {
             return "3" + result;
         }
-        return result.length() == 0 ? letters.toString() : result;
+        return result.isEmpty() ? letters.toString() : result;
     }
 
     public List<InternetDocument> findDocumentByData(String findByData) throws IOException, InterruptedException {
