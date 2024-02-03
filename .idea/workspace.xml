@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d279824-7519-4025-b202-c495a299966f" name="Changes" comment="change pom">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mishchuk7/model/InternetDocument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mishchuk7/model/InternetDocument.java" afterDir="false" />
+    <list default="true" id="3d279824-7519-4025-b202-c495a299966f" name="Changes" comment="some minor changes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -492,7 +493,7 @@
       <option name="project" value="LOCAL" />
       <updated>1663151562282</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -510,7 +511,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="some minor change" />
     <MESSAGE value="added new class EcomedNovaBotSender" />
     <MESSAGE value="added new field EcomedNovaBotSender ecomedNovaBotSender" />
     <MESSAGE value="added method List&lt;UserRequestHandler&gt; getHandlers() and field Dispatcher dispatcher" />
@@ -535,6 +535,7 @@
     <MESSAGE value="change pom.xml" />
     <MESSAGE value="change Dockerfile" />
     <MESSAGE value="change pom" />
-    <option name="LAST_COMMIT_MESSAGE" value="change pom" />
+    <MESSAGE value="some minor changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="some minor changes" />
   </component>
 </project>
