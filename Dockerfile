@@ -14,3 +14,4 @@ FROM amazoncorretto:11
 # copy jar from the first stage
 COPY --from=builder target/np-bot-jar-with-dependencies.jar app.jar
 CMD ["java", "-jar", "/app.jar"]
+EXPOSE 8080
