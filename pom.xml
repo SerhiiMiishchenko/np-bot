@@ -129,7 +129,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>com.github.mishchuk7.Main</mainClass>
+                            <mainClass>com.github.mishchuk7.Application</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
