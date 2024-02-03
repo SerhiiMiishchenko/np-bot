@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d279824-7519-4025-b202-c495a299966f" name="Changes" comment="change Dockerfile" />
+    <list default="true" id="3d279824-7519-4025-b202-c495a299966f" name="Changes" comment="change Dockerfile">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,7 +50,9 @@
     "Maven.np-bot [clean].executor": "Run",
     "Maven.np-bot [compile].executor": "Run",
     "Maven.np-bot [deploy].executor": "Run",
+    "Maven.np-bot [install].executor": "Run",
     "Maven.np-bot [package].executor": "Run",
+    "Maven.np-bot [validate].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -488,7 +493,7 @@
       <option name="project" value="LOCAL" />
       <updated>1663151562282</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -506,7 +511,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="some minor changes" />
     <MESSAGE value="html markup (tag &lt;b&gt;&lt;/b&gt;) has been added to the method toString" />
     <MESSAGE value="some minor change" />
     <MESSAGE value="added new class EcomedNovaBotSender" />
@@ -530,6 +534,7 @@
     <MESSAGE value="add PayerType; document Cost and payer type was added" />
     <MESSAGE value="add Dockerfile" />
     <MESSAGE value="add fly.toml" />
+    <MESSAGE value="change pom.xml" />
     <MESSAGE value="change Dockerfile" />
     <option name="LAST_COMMIT_MESSAGE" value="change Dockerfile" />
   </component>
