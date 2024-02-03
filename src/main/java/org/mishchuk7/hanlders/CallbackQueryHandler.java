@@ -37,7 +37,7 @@ public class CallbackQueryHandler extends UserRequestHandler {
             } else if (buttonText.equalsIgnoreCase(KeyboardButtons.ALL_WAYBILLS.getButtonText())) {
                 result = internetDocuments.stream()
                         .map(InternetDocument::toString)
-                        .reduce((doc, doc1) -> doc + "-".repeat(30) + "\n" + doc1)
+                        .reduce((doc, doc1) -> doc + "\n" + "-".repeat(50) + "\n" + doc1)
                         .orElse(notFound);
             }
             telegramService.sendMessage(userRequest.getChatId(), cutTooLongResult(result));
